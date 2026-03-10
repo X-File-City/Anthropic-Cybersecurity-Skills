@@ -5,6 +5,12 @@ description: >-
   network connections, file integrity, and persistence mechanisms. Generates osquery.conf with
   query packs, configures differential result logging, and analyzes query results to detect
   suspicious processes, unauthorized listeners, and file modifications in system directories.
+domain: cybersecurity
+subdomain: security-operations
+tags: [implementing, osquery, for, endpoint]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

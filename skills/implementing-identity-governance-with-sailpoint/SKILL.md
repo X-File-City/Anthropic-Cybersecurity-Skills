@@ -1,5 +1,5 @@
 ---
-name: None
+name: implementing-identity-governance-with-sailpoint
 description: Deploy SailPoint IdentityNow or IdentityIQ for identity governance and administration. Covers identity lifecycle management, access request workflows, certification campaigns, role mining, SOD policy 
 domain: cybersecurity
 subdomain: identity-access-management

@@ -1,5 +1,5 @@
 ---
-name: None
+name: implementing-pam-for-database-access
 description: Deploy privileged access management for database systems including Oracle, SQL Server, PostgreSQL, and MySQL. Covers session proxy configuration, credential vaulting, query auditing, dynamic credentia
 domain: cybersecurity
 subdomain: identity-access-management

@@ -5,6 +5,12 @@ description: >
   security controls to verify detection and response capabilities. Tests WAF bypass,
   firewall rule removal, log pipeline disruption, and EDR disablement scenarios using
   boto3 and subprocess. Use when validating SOC detection coverage and resilience.
+domain: cybersecurity
+subdomain: security-operations
+tags: [implementing, security, chaos, engineering]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Implementing Security Chaos Engineering

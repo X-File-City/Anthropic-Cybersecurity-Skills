@@ -5,6 +5,12 @@ description: >
   beacons, database records) that trigger alerts when accessed by attackers. Uses the
   Canarytokens API and custom webhook integrations for breach detection. Use when
   building deception-based early warning systems for intrusion detection.
+domain: cybersecurity
+subdomain: security-operations
+tags: [implementing, honeytokens, for, breach]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Implementing Honeytokens for Breach Detection

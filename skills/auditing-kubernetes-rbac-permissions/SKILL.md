@@ -1,5 +1,5 @@
 ---
-name: None
+name: auditing-kubernetes-rbac-permissions
 description: Kubernetes Role-Based Access Control (RBAC) auditing systematically reviews roles, cluster roles, bindings, and service account permissions to identify overly permissive access, privilege escalation p
 domain: cybersecurity
 subdomain: container-security

@@ -1,3 +1,14 @@
+---
+name: implementing-zero-trust-network-access-with-zscaler
+description: Implementing Zero Trust Network Access With Zscaler
+domain: cybersecurity
+subdomain: security-operations
+tags: [cybersecurity]
+version: "1.0"
+author: mahipal
+license: MIT
+---
+
 # Implementing Zero Trust Network Access with Zscaler
 
 ---

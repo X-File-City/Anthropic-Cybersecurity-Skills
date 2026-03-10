@@ -5,6 +5,12 @@ description: >-
   TGT usage patterns. Parses Event IDs 4624, 4672, and 4768 from EVTX files to identify tickets
   with abnormal lifetimes, domain SID mismatches, and privilege escalation sequences where
   non-admin accounts receive admin-level privileges without corresponding group membership changes.
+domain: cybersecurity
+subdomain: security-operations
+tags: [detecting, golden, ticket, attacks]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

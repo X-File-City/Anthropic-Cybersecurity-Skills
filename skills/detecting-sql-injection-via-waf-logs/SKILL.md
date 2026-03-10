@@ -6,6 +6,12 @@ description: >-
   identify SQLi patterns (UNION SELECT, OR 1=1, SLEEP(), BENCHMARK()), tracks
   attack sources, correlates multi-stage injection attempts, and generates
   incident reports with OWASP classification.
+domain: cybersecurity
+subdomain: security-operations
+tags: [detecting, sql, injection, via]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

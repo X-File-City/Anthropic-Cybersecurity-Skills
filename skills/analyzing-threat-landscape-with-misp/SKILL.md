@@ -6,6 +6,12 @@ description: >-
   clusters, and tag trends over time. Uses PyMISP to pull event data, compute
   IOC type breakdowns, identify top threat actors and malware families, and
   generate threat landscape reports with temporal trends.
+domain: cybersecurity
+subdomain: threat-intelligence
+tags: [analyzing, threat, landscape, with]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

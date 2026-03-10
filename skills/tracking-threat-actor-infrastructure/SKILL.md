@@ -1,5 +1,5 @@
 ---
-name: None
+name: tracking-threat-actor-infrastructure
 description: Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, a
 domain: cybersecurity
 subdomain: threat-intelligence

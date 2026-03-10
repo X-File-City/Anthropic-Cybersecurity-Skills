@@ -5,6 +5,12 @@ description: >
   access, RBAC modifications, privileged pod creation, and anonymous API access. Builds
   threat detection rules from audit event patterns. Use when investigating Kubernetes
   cluster compromise or building k8s-specific SIEM detection rules.
+domain: cybersecurity
+subdomain: container-security
+tags: [analyzing, kubernetes, audit, logs]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Analyzing Kubernetes Audit Logs

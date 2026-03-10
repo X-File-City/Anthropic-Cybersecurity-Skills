@@ -5,6 +5,12 @@ description: >
   regsvr32, and rundll32 in Windows event logs and Sysmon telemetry. Builds detection
   rules by cross-referencing process creation events against the LOLBAS project database.
   Use when threat hunting for fileless attack techniques or building SIEM detection rules.
+domain: cybersecurity
+subdomain: security-operations
+tags: [hunting, living, off, the]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Hunting Living Off The Land Binaries

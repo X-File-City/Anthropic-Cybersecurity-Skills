@@ -6,6 +6,12 @@ description: >-
   analyze connection patterns, detect beaconing behavior, and identify suspicious
   network flows. Monitors DNS queries, HTTP traffic, and TLS certificate anomalies
   across captured traffic.
+domain: cybersecurity
+subdomain: network-security
+tags: [implementing, network, traffic, analysis]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

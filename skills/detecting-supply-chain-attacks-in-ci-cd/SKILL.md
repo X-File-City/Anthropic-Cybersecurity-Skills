@@ -5,6 +5,12 @@ description: >
   attack vectors including unpinned actions, script injection via expressions, dependency
   confusion, and secrets exposure. Uses PyGithub and YAML parsing for automated audit.
   Use when hardening CI/CD pipelines or investigating compromised build systems.
+domain: cybersecurity
+subdomain: security-operations
+tags: [detecting, supply, chain, attacks]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Detecting Supply Chain Attacks in CI/CD

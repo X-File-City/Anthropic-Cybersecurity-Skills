@@ -5,6 +5,12 @@ description: >-
   and log rotation. Generates server and client configuration files with GnuTLS stream
   drivers, x509 certificate authentication, per-host log segregation, and reliable
   queue settings for high-availability syslog infrastructure.
+domain: cybersecurity
+subdomain: security-operations
+tags: [implementing, syslog, centralization, with]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

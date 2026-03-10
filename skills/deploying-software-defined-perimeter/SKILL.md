@@ -1,3 +1,14 @@
+---
+name: deploying-software-defined-perimeter
+description: Deploying Software Defined Perimeter
+domain: cybersecurity
+subdomain: security-operations
+tags: [cybersecurity]
+version: "1.0"
+author: mahipal
+license: MIT
+---
+
 # Deploying Software-Defined Perimeter
 
 ---

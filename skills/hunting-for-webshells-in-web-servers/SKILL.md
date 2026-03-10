@@ -6,6 +6,12 @@ description: >-
   recently modified files in web roots, and anomalous file sizes. Uses Shannon
   entropy calculation to flag obfuscated payloads and regex pattern matching
   against known webshell signatures.
+domain: cybersecurity
+subdomain: security-operations
+tags: [hunting, for, webshells, web]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

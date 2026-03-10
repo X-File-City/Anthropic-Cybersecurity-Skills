@@ -5,6 +5,12 @@ description: >
   and analysis with Volatility 3 framework. Extracts process lists, network connections,
   bash history, loaded kernel modules, and injected code from Linux memory images.
   Use when performing incident response on compromised Linux systems.
+domain: cybersecurity
+subdomain: security-operations
+tags: [analyzing, memory, forensics, with]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Analyzing Memory Forensics with LiME and Volatility

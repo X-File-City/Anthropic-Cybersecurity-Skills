@@ -6,6 +6,12 @@ description: >-
   validates SPF syntax and lookup counts, verifies DKIM selector records,
   parses DMARC policies, and identifies misconfigurations that enable email
   spoofing. Generates remediation recommendations.
+domain: cybersecurity
+subdomain: security-operations
+tags: [implementing, email, security, with]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

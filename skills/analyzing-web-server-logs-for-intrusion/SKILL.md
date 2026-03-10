@@ -5,6 +5,12 @@ description: >-
   directory traversal, web scanner fingerprints, and brute-force patterns. Uses regex-based
   pattern matching against OWASP attack signatures, GeoIP enrichment for source attribution,
   and statistical anomaly detection for request frequency and response size outliers.
+domain: cybersecurity
+subdomain: security-operations
+tags: [analyzing, web, server, logs]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

@@ -5,6 +5,12 @@ description: >
   attacks, rate limit bypass, credential scanning, and injection attempts. Uses pandas
   for statistical analysis of request patterns and anomaly detection. Use when
   investigating API abuse or building API-specific threat detection rules.
+domain: cybersecurity
+subdomain: security-operations
+tags: [analyzing, api, gateway, access]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Analyzing API Gateway Access Logs

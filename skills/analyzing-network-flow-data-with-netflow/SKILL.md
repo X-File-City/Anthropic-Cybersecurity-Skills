@@ -5,6 +5,12 @@ description: >-
   exfiltration, and C2 beaconing patterns. Uses the Python netflow library to decode flow
   records, builds traffic baselines, and applies statistical analysis to identify flows
   with abnormal byte counts, connection durations, and periodic timing patterns.
+domain: cybersecurity
+subdomain: network-security
+tags: [analyzing, network, flow, data]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

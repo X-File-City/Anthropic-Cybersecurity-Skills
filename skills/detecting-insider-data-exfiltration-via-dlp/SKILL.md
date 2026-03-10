@@ -5,6 +5,12 @@ description: >
   patterns, upload volume anomalies, and off-hours activity in endpoint and cloud logs.
   Uses pandas for behavioral analytics and statistical baselines. Use when investigating
   insider threats or building user behavior analytics for data loss prevention.
+domain: cybersecurity
+subdomain: security-operations
+tags: [detecting, insider, data, exfiltration]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Detecting Insider Data Exfiltration via DLP

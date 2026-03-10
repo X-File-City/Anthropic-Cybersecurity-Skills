@@ -5,6 +5,12 @@ description: >
   atomic-operator Python framework. Loads test definitions from YAML atomics, runs
   attack simulations, and validates detection coverage. Use when testing SIEM detection
   rules, validating EDR coverage, or conducting purple team exercises.
+domain: cybersecurity
+subdomain: threat-intelligence
+tags: [performing, threat, emulation, with]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Performing Threat Emulation with Atomic Red Team

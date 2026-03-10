@@ -1,5 +1,5 @@
 ---
-name: configuring-tls-1.3-for-secure-communications
+name: configuring-tls-1-3-for-secure-communications
 description: TLS 1.3 (RFC 8446) is the latest version of the Transport Layer Security protocol, providing significant improvements over TLS 1.2 in both security and performance. It reduces handshake latency to 1-R
 domain: cybersecurity
 subdomain: cryptography

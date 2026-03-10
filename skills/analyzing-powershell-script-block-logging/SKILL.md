@@ -5,6 +5,12 @@ description: >-
   commands, encoded payloads, and living-off-the-land techniques. Uses python-evtx to extract and
   reconstruct multi-block scripts, applies entropy analysis and pattern matching for Base64-encoded
   commands, Invoke-Expression abuse, download cradles, and AMSI bypass attempts.
+domain: cybersecurity
+subdomain: security-operations
+tags: [analyzing, powershell, script, block]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

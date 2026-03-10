@@ -1,3 +1,14 @@
+---
+name: implementing-identity-verification-for-zero-trust
+description: Implementing Identity Verification For Zero Trust
+domain: cybersecurity
+subdomain: security-operations
+tags: [cybersecurity]
+version: "1.0"
+author: mahipal
+license: MIT
+---
+
 # Implementing Identity Verification for Zero Trust
 
 ---

@@ -5,6 +5,12 @@ description: >
   injected code via VAD anomalies, hidden processes, and rootkit detection. Applies
   plugins like pslist, psscan, vadinfo, malfind, and dlllist to extract forensic
   artifacts from Windows memory images. Use during incident response memory analysis.
+domain: cybersecurity
+subdomain: security-operations
+tags: [extracting, memory, artifacts, with]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Extracting Memory Artifacts with Rekall

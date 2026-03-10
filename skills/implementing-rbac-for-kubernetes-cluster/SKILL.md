@@ -1,5 +1,5 @@
 ---
-name: None
+name: implementing-rbac-for-kubernetes-cluster
 description: Configure Kubernetes Role-Based Access Control (RBAC) to enforce least-privilege access to cluster resources. This skill covers Role/ClusterRole design, RoleBinding configuration, service account secu
 domain: cybersecurity
 subdomain: identity-access-management

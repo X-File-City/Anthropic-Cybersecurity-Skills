@@ -6,6 +6,12 @@ description: >-
   where modifying any entry invalidates all subsequent hashes. Implements log ingestion,
   chain verification, tamper detection with pinpoint identification, and periodic checkpoint
   anchoring to external timestamping services.
+domain: cybersecurity
+subdomain: security-operations
+tags: [implementing, log, integrity, with]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

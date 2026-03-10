@@ -1,3 +1,14 @@
+---
+name: configuring-microsegmentation-for-zero-trust
+description: Configuring Microsegmentation For Zero Trust
+domain: cybersecurity
+subdomain: security-operations
+tags: [cybersecurity]
+version: "1.0"
+author: mahipal
+license: MIT
+---
+
 # Configuring Microsegmentation for Zero Trust
 
 ---

@@ -5,6 +5,12 @@ description: >
   domains, unauthorized certificate issuance, and shadow IT. Monitors newly issued
   certificates for typosquatting and brand impersonation using Levenshtein distance.
   Use for proactive phishing domain detection and certificate monitoring.
+domain: cybersecurity
+subdomain: security-operations
+tags: [analyzing, tls, certificate, transparency]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 # Analyzing TLS Certificate Transparency Logs

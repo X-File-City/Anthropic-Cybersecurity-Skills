@@ -1,5 +1,5 @@
 ---
-name: None
+name: performing-indicator-lifecycle-management
 description: Indicator lifecycle management tracks IOCs from initial discovery through validation, enrichment, deployment, monitoring, and eventual retirement. This skill covers implementing systematic processes f
 domain: cybersecurity
 subdomain: threat-intelligence

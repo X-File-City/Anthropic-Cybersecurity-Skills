@@ -5,6 +5,12 @@ description: >-
   correlates events with galaxy clusters, and enriches indicators via VirusTotal and AbuseIPDB.
   Uses PyMISP to create events, add attributes with IDS flags, tag with MITRE ATT&CK techniques,
   and export STIX 2.1 bundles for downstream SIEM consumption.
+domain: cybersecurity
+subdomain: threat-intelligence
+tags: [implementing, threat, intelligence, platform]
+version: "1.0"
+author: mahipal
+license: MIT
 ---
 
 ## Instructions

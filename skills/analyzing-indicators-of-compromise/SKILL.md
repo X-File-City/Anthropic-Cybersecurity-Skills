@@ -11,7 +11,7 @@ subdomain: threat-intelligence
 tags: [IOC, VirusTotal, AbuseIPDB, MalwareBazaar, MISP, threat-intelligence, STIX, NIST-CSF]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Indicators of Compromise
 

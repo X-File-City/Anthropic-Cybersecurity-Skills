@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [incident-triage, NIST-800-61, SANS-PICERL, severity-classification, SOC-operations]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Triaging Security Incidents

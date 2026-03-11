@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [saviynt, access-recertification, identity-governance, compliance, certification-campaign, iga]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Access Recertification with Saviynt

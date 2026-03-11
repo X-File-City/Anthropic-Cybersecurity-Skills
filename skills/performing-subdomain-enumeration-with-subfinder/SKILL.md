@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [subdomain-enumeration, reconnaissance, bug-bounty, attack-surface, subfinder, passive-recon, osint]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Subdomain Enumeration with Subfinder

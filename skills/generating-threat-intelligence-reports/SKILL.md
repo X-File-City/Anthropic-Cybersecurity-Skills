@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [CTI, threat-intelligence, intelligence-products, TLP, PIR, report-writing, NIST-CSF]
 version: 1.0.0
 author: team-cybersecurity
-license: MIT
+license: Apache-2.0
 ---
 # Generating Threat Intelligence Reports
 

@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, mitre-attack, cloud-abuse, c2, lotc, saas, proactive-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting For Living Off The Cloud Techniques

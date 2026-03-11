@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, dns, exfiltration, dns-tunneling, dga, c2-detection, splunk, threat-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing DNS Logs for Exfiltration
 

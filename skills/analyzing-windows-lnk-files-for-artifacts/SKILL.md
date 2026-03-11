@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, lnk-files, windows-artifacts, shortcut-analysis, timeline-reconstruction, evidence-collection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Windows LNK Files for Artifacts

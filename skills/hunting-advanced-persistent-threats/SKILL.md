@@ -11,7 +11,7 @@ subdomain: threat-intelligence
 tags: [MITRE-ATT&CK, threat-hunting, APT, Velociraptor, osquery, Zeek, TTP, NIST-CSF, EDR]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Hunting Advanced Persistent Threats
 

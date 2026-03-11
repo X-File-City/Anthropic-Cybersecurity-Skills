@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, usb-forensics, removable-media, registry-analysis, data-exfiltration, device-history]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing USB Device Connection History

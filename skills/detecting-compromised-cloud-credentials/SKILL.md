@@ -10,7 +10,7 @@ subdomain: cloud-security
 tags: [cloud-security, credential-compromise, threat-detection, guardduty, incident-response, anomaly-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Compromised Cloud Credentials

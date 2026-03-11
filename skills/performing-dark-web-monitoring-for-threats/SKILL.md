@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [threat-intelligence, cti, ioc, mitre-attack, stix, dark-web, tor, threat-monitoring]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Dark Web Monitoring for Threats
 

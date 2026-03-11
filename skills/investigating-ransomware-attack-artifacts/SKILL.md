@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, ransomware, malware-analysis, incident-response, encryption-recovery, evidence-collection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Investigating Ransomware Attack Artifacts

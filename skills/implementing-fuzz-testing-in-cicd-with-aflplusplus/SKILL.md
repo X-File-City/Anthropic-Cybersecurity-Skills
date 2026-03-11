@@ -6,7 +6,7 @@ subdomain: devsecops
 tags: [aflplusplus, fuzz-testing, cicd, coverage-guided-fuzzing, security-testing, vulnerability-discovery, afl]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Fuzz Testing in CI/CD with AFL++

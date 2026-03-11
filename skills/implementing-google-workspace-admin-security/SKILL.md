@@ -11,7 +11,7 @@ subdomain: identity-access-management
 tags: [Google-Workspace, admin-security, MFA, DMARC, DLP, OAuth, cloud-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Google Workspace Admin Security

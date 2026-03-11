@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, slack-space, ntfs, mft, usn-journal, alternate-data-streams, file-system-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Slack Space and File System Artifacts

@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, mitre-attack, webshell, persistence, web-server, t1505, proactive-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting For Webshell Activity

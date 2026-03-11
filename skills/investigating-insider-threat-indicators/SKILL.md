@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, insider-threat, data-exfiltration, dlp, ueba, investigation, hr-correlation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Investigating Insider Threat Indicators
 

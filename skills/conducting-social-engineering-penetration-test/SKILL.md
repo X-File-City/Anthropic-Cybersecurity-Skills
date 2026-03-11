@@ -6,7 +6,7 @@ subdomain: penetration-testing
 tags: [social-engineering, phishing, vishing, pretexting, GoPhish, SET, OSINT, security-awareness, red-team]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Social Engineering Penetration Test

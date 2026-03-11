@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, api-security, owasp, rest-api, graphql, burpsuite, postman]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing API Security with OWASP Top 10

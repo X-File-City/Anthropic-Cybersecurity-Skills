@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, adversary-simulation, mitre-attack, exploitation, post-exploitation, privilege-escalation, linux]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Privilege Escalation on Linux
 

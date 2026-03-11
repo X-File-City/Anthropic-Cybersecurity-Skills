@@ -6,7 +6,7 @@ subdomain: malware-analysis
 tags: [ransomware, encryption, reverse-engineering, cryptanalysis, aes, rsa, decryption, malware-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Reverse Engineering Ransomware Encryption Routine
 

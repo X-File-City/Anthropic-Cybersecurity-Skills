@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [threat-intelligence, cti, ioc, mitre-attack, stix, platform-building, misp, opencti]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Threat Intelligence Platform
 

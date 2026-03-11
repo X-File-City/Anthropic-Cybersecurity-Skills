@@ -6,7 +6,7 @@ subdomain: penetration-testing
 tags: [external-pentest, network-security, PTES, OSSTMM, Nmap, Metasploit, vulnerability-assessment, reconnaissance, exploitation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing External Network Penetration Test

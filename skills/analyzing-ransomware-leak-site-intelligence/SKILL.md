@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [ransomware, leak-site, data-leak, extortion, threat-intelligence, monitoring, dls, victim-tracking]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Ransomware Leak Site Intelligence
 

@@ -10,7 +10,7 @@ subdomain: cloud-security
 tags: [performing, cloud, native, forensics]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Cloud Native Forensics with Falco

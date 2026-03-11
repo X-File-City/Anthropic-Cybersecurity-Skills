@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [phishing, email-security, social-engineering, dmarc, awareness, url-analysis, threat-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Malicious URL with URLScan
 

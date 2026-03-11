@@ -11,7 +11,7 @@ subdomain: incident-response
 tags: [cloud-IR, AWS-forensics, Azure-incident-response, GCP-security, identity-containment]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Cloud Incident Response

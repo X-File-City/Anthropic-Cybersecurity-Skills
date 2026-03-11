@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, privileged-access, pam, database, dba]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing PAM for Database Access
 

@@ -13,7 +13,7 @@ subdomain: api-security
 tags: [api-security, owasp, bola, idor, authorization, rest-security]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Testing API for Broken Object Level Authorization
 

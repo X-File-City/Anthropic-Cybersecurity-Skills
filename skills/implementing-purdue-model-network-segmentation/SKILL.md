@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, purdue-model, network-segmentation, iec62443, defense-in-depth, dmz, scada]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Purdue Model Network Segmentation

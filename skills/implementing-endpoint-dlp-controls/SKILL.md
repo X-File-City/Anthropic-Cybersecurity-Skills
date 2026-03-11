@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, DLP, data-loss-prevention, data-protection, content-inspection]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Endpoint DLP Controls
 

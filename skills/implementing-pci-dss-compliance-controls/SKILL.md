@@ -6,7 +6,7 @@ subdomain: compliance-governance
 tags: [compliance, governance, pci-dss, payment-security, cardholder-data]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing PCI DSS Compliance Controls
 

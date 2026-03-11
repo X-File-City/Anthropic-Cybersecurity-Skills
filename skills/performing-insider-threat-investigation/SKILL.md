@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [insider-threat, user-behavior-analytics, data-exfiltration, privilege-misuse, DFIR]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Insider Threat Investigation

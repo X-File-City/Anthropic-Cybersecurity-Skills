@@ -10,7 +10,7 @@ subdomain: threat-intelligence
 tags: [implementing, threat, intelligence, platform]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 ## Instructions

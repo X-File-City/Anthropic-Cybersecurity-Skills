@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [cloud-pentesting, offensive-security, aws-exploitation, shared-responsibility, mitre-attack-cloud]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Cloud Penetration Testing

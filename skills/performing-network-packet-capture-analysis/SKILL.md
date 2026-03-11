@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [pcap, wireshark, tshark, tcpdump, network-forensics, packet-capture, protocol-analysis, traffic-analysis, pcapng, network-evidence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Network Packet Capture Analysis

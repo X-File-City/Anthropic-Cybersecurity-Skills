@@ -9,7 +9,7 @@ subdomain: zero-trust-architecture
 tags: [device-posture, zero-trust, endpoint-compliance, crowdstrike-zta, intune, conditional-access, jamf]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Device Posture Assessment in Zero Trust

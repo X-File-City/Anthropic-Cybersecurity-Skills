@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, USB-control, device-control, data-loss-prevention, removable-media]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing USB Device Control Policy
 

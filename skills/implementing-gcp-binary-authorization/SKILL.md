@@ -6,7 +6,7 @@ subdomain: cloud-security
 tags: [gcp, binary-authorization, container-security, supply-chain, gke, cloud-run, attestation, software-integrity]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing GCP Binary Authorization

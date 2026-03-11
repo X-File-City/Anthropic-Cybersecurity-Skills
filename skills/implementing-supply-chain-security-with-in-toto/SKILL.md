@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [in-toto, supply-chain-security, attestation, slsa, sigstore, container-security, cncf, provenance, sbom]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Supply Chain Security with in-toto

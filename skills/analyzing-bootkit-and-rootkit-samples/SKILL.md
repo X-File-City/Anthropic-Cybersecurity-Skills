@@ -11,7 +11,7 @@ subdomain: malware-analysis
 tags: [malware, bootkit, rootkit, UEFI, MBR-analysis]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Bootkit and Rootkit Samples

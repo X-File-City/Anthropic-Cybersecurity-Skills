@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, credential-access, lazagne, post-exploitation, password-recovery, credential-dumping, lateral-movement]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Credential Access with LaZagne
 

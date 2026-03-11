@@ -10,7 +10,7 @@ subdomain: security-operations
 tags: [analyzing, tls, certificate, transparency]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing TLS Certificate Transparency Logs

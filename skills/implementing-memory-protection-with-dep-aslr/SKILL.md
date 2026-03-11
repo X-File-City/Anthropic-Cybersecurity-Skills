@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, memory-protection, DEP, ASLR, exploit-mitigation, CFG]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Memory Protection with DEP and ASLR
 

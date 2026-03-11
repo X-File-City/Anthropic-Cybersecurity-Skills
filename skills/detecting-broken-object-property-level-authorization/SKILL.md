@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [api-security, bopla, owasp-api3, mass-assignment, excessive-data-exposure, property-level-authorization, api-testing, penetration-testing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Broken Object Property Level Authorization

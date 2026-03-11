@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [falco, container-escape, runtime-security, syscall-monitoring, kubernetes, detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Container Escape with Falco Rules

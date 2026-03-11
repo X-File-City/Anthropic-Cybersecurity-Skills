@@ -13,7 +13,7 @@ subdomain: ransomware-defense
 tags: [ransomware, backup, incident-response, defense, recovery, immutable-storage]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Ransomware Backup Strategy
 

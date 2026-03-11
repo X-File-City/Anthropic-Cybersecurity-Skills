@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, gcp, forseti, security-command-center, iam-audit, cis-benchmark]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing GCP Security Assessment with Forseti

@@ -6,7 +6,7 @@ subdomain: compliance-governance
 tags: [compliance, governance, soc2, audit, trust-services-criteria, aicpa]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing SOC 2 Type II Audit Preparation
 

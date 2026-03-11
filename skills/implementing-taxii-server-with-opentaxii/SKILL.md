@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [taxii, stix, opentaxii, threat-sharing, cti, indicator-exchange, taxii-server, automation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing TAXII Server with OpenTAXII
 

@@ -6,7 +6,7 @@ subdomain: soc-operations
 tags: [xsoar, soar, palo-alto, playbook, automation, incident-response, orchestration, cortex]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing SOAR Playbook with Palo Alto XSOAR

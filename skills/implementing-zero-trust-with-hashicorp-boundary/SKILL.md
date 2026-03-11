@@ -6,7 +6,7 @@ subdomain: zero-trust-architecture
 tags: [zero-trust, hashicorp, boundary, privileged-access, vault, identity-aware-proxy, session-recording, just-in-time-access]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Zero Trust with HashiCorp Boundary

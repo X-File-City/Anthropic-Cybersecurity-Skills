@@ -11,7 +11,7 @@ subdomain: devsecops
 tags: [devsecops, cicd, github-actions, supply-chain, workflow-security, secure-sdlc]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Securing GitHub Actions Workflows

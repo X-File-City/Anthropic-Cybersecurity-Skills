@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [Diamond-Model, intrusion-analysis, attribution, campaign-clustering, CTI, MITRE-ATT&CK]
 version: 1.0.0
 author: team-cybersecurity
-license: MIT
+license: Apache-2.0
 ---
 # Executing Diamond Model Analysis
 

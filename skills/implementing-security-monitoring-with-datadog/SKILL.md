@@ -6,7 +6,7 @@ subdomain: security-operations
 tags: [siem, monitoring, datadog, cloud-security, log-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Security Monitoring with Datadog
 

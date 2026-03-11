@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, dcsync, active-directory, credential-access, t1003.006, mimikatz, windows, dfir]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting for DCSync Attacks

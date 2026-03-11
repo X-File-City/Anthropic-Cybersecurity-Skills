@@ -13,7 +13,7 @@ subdomain: penetration-testing
 tags: [red-team, adversary-emulation, MITRE-ATT&CK, Cobalt-Strike, detection-assessment]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Executing Red Team Exercise
 

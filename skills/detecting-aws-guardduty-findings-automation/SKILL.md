@@ -6,7 +6,7 @@ subdomain: cloud-security
 tags: [aws, guardduty, eventbridge, lambda, threat-detection, automation, incident-response, siem]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting AWS GuardDuty Findings Automation

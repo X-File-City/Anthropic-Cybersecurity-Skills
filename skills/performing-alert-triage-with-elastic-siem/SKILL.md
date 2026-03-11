@@ -6,7 +6,7 @@ subdomain: soc-operations
 tags: [elastic, siem, alert-triage, soc, elastic-security, detection, esql, kibana]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Alert Triage with Elastic SIEM

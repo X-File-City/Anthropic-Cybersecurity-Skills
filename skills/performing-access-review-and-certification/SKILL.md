@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, access-review, certification, compliance, governance]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Access Review and Certification
 

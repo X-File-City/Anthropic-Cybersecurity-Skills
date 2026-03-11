@@ -6,7 +6,7 @@ subdomain: compliance-governance
 tags: [compliance, governance, nist, csf, maturity-assessment, risk-management]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing NIST CSF Maturity Assessment
 

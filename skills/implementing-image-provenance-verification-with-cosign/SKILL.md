@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [cosign, sigstore, image-signing, supply-chain, provenance, keyless, slsa]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Image Provenance Verification with Cosign

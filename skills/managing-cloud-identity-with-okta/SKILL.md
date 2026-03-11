@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [okta, cloud-identity, single-sign-on, phishing-resistant-mfa, identity-lifecycle]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Managing Cloud Identity with Okta

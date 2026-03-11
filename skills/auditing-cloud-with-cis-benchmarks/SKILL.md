@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [cis-benchmarks, cloud-audit, compliance-assessment, prowler, security-hardening]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Auditing Cloud with CIS Benchmarks

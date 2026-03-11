@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, dlp, data-protection, macie, data-classification, privacy]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Cloud DLP for Data Protection

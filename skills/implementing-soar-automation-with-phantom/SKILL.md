@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, soar, phantom, splunk-soar, automation, playbook, orchestration, incident-response]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing SOAR Automation with Phantom
 

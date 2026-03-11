@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [saml, azure-ad, entra-id, federation, identity, sso, adfs, hybrid-identity]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Identity Federation with SAML Azure AD

@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, governance, sailpoint, iga, lifecycle]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Identity Governance with SailPoint
 

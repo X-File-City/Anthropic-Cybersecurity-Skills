@@ -13,7 +13,7 @@ subdomain: api-security
 tags: [api-security, graphql, introspection, schema-extraction, query-abuse]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing GraphQL Introspection Attack
 

@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [jwt, none-algorithm, authentication-bypass, token-manipulation, signature-bypass, penetration-testing, owasp, web-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing JWT None Algorithm Attack

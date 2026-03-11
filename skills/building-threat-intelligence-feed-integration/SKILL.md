@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, threat-intelligence, stix, taxii, misp, feeds, ioc, siem-integration]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Threat Intelligence Feed Integration
 

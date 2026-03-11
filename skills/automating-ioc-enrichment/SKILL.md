@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [SOAR, enrichment, IOC, Cortex-XSOAR, Splunk-SOAR, VirusTotal, automation, CTI, NIST-CSF]
 version: 1.0.0
 author: team-cybersecurity
-license: MIT
+license: Apache-2.0
 ---
 # Automating IOC Enrichment
 

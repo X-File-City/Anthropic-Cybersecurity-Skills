@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [cryptomining-detection, cloud-abuse, resource-hijacking, guardduty-crypto, cost-anomaly]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Cryptomining in Cloud

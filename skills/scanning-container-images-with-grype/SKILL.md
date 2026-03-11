@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [grype, vulnerability-scanning, container-security, sbom, anchore, supply-chain]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Scanning Container Images with Grype

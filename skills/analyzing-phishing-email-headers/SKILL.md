@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [phishing, email-security, social-engineering, dmarc, awareness, header-analysis, forensics]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Phishing Email Headers
 

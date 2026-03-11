@@ -6,7 +6,7 @@ subdomain: security-operations
 tags: [siem, xdr, wazuh, endpoint-detection, custom-rules, incident-response]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Endpoint Detection with Wazuh
 

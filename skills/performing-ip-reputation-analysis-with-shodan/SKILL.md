@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [shodan, ip-reputation, enrichment, threat-intelligence, reconnaissance, vulnerability, api, internet-scanning]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing IP Reputation Analysis with Shodan
 

@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, jwt, authentication, token-security, digital-signatures]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing JWT Signing and Verification
 

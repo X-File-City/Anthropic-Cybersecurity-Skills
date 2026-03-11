@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, ueba, user-behavior, insider-threat, anomaly-detection, splunk, baseline]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing User Behavior Analytics
 

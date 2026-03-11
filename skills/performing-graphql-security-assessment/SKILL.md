@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, graphql, api-security, owasp, web-security, introspection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing GraphQL Security Assessment

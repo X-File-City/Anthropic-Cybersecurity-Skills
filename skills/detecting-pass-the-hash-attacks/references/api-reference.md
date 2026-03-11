@@ -1,43 +1,64 @@
 # API Reference: Detecting Pass-the-Hash Attacks
 
-## python-evtx Library
+## Windows Event ID 4624 Fields
+
+| Field | PtH Signal |
+|-------|------------|
+| LogonType | 3 (Network) |
+| AuthenticationPackageName | NTLM (not Kerberos) |
+| LogonProcessName | NtLmSsp |
+| IpAddress | Source of authentication |
+| TargetUserName | Account being used |
+
+## python-evtx Usage
+
 ```python
-from Evtx.Evtx import FileHeader
-with open("Security.evtx", "rb") as f:
-    fh = FileHeader(f)
-    for record in fh.records():
-        xml_string = record.xml()
+import Evtx.Evtx as evtx
+with evtx.Evtx("Security.evtx") as log:
+    for record in log.records():
+        xml = record.xml()
+        # Filter EventID 4624, LogonType=3, AuthPackage=NTLM
 ```
 
-## Event 4624 - NTLM Network Logon (PTH Indicator)
-```xml
-<Data Name="TargetUserName">admin</Data>
-<Data Name="TargetDomainName">CORP</Data>
-<Data Name="LogonType">3</Data>
-<Data Name="AuthenticationPackageName">NTLM</Data>
-<Data Name="LmPackageName">NTLM V2</Data>
-<Data Name="LogonProcessName">NtLmSsp</Data>
-<Data Name="KeyLength">0</Data>
-<Data Name="IpAddress">10.0.0.50</Data>
-<Data Name="WorkstationName">ATTACKER-PC</Data>
+## PtH Detection Logic
+
+```python
+src_targets = defaultdict(set)
+for event in ntlm_logons:
+    src_targets[event["source_ip"]].add(event["computer"])
+# Alert when single source authenticates to 3+ targets via NTLM
 ```
 
-## PTH Detection Indicators
-| Field | PTH Value | Normal |
-|-------|-----------|--------|
-| LogonType | 3 (Network) | Various |
-| AuthenticationPackageName | NTLM | Kerberos |
-| LogonProcessName | NtLmSsp | Kerberos |
-| KeyLength | 0 | 128 |
-| LmPackageName | NTLM V1 (weaker) | NTLM V2 |
+## Splunk SPL Detection
 
-## Detection Logic
-1. Filter 4624 where LogonType=3 AND AuthenticationPackageName=NTLM
-2. Flag events with KeyLength=0 (hash-only authentication)
-3. Detect same account authenticating from 3+ different source IPs
-4. Detect account used from 3+ different workstation names
-5. Correlate with process creation (4688) for post-exploitation activity
+```spl
+index=wineventlog EventCode=4624 Logon_Type=3
+| where Authentication_Package="NTLM"
+| stats dc(Computer) as targets by Source_Network_Address, Account_Name
+| where targets >= 3
+| sort -targets
+```
 
-## MITRE ATT&CK
-- T1550.002 - Pass the Hash
-- T1078 - Valid Accounts
+## KQL (Microsoft Sentinel)
+
+```kql
+SecurityEvent
+| where EventID == 4624 and LogonType == 3
+| where AuthenticationPackageName == "NTLM"
+| summarize TargetCount=dcount(Computer) by IpAddress, TargetUserName
+| where TargetCount >= 3
+```
+
+## Mitigation
+
+```powershell
+# Restrict NTLM authentication
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name "RestrictSendingNTLMTraffic" -Value 2
+```
+
+## CLI Usage
+
+```bash
+python agent.py --security-log Security.evtx
+python agent.py --security-log Security.evtx --target-threshold 5
+```

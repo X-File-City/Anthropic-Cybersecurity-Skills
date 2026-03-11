@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [xml-injection, xxe, xpath-injection, xml-parsing, web-security, entity-injection, dtd-attack]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing for XML Injection Vulnerabilities

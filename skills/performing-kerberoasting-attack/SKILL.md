@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, adversary-simulation, mitre-attack, exploitation, post-exploitation, kerberoasting, active-directory, credential-access]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Kerberoasting Attack
 

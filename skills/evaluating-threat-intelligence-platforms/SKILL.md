@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [TIP, ThreatConnect, MISP, OpenCTI, Anomali, EclecticIQ, STIX-TAXII, CTI-program, procurement]
 version: 1.0.0
 author: team-cybersecurity
-license: MIT
+license: Apache-2.0
 ---
 # Evaluating Threat Intelligence Platforms
 

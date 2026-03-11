@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, asset-discovery, claroty, xdome, scada, network-visibility, iec62443]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing ICS Asset Discovery with Claroty

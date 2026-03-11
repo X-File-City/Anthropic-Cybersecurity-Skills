@@ -9,7 +9,7 @@ subdomain: zero-trust-architecture
 tags: [zscaler, zpa, ztna, zero-trust, app-connector, access-policy, sase]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Configuring Zscaler Private Access for ZTNA

@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, beaconing, c2-detection, frequency-analysis, network-traffic, RITA, jitter-detection, mitre-t1071]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting for Beaconing with Frequency Analysis

@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [kill-chain, Lockheed-Martin, MITRE-ATT&CK, intrusion-analysis, defense-in-depth, NIST-CSF]
 version: 1.0.0
 author: team-cybersecurity
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Cyber Kill Chain
 

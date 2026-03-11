@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [paste-monitoring, credential-leak, pastebin, data-breach, threat-intelligence, osint, early-warning]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Paste Site Monitoring for Credentials
 

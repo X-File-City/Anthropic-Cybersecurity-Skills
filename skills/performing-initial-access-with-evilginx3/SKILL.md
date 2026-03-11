@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, initial-access, phishing, evilginx, mfa-bypass, adversary-in-the-middle, credential-theft]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Initial Access with EvilGinx3
 

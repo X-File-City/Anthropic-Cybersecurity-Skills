@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, rsa, key-management, pki, asymmetric-encryption]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing RSA Key Pair Management
 

@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, encryption, aws, kms, envelope-encryption, key-management]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Envelope Encryption with AWS KMS
 

@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, remote-access, iec62443, jump-server, zero-trust, conduit, mfa]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Conduit Security for OT Remote Access

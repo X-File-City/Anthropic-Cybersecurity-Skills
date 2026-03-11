@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, phishing, incident-response, email-security, splunk, defender, sandbox]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Investigating Phishing Email Incident
 

@@ -10,7 +10,7 @@ subdomain: container-security
 tags: [analyzing, kubernetes, audit, logs]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Kubernetes Audit Logs

@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [serverless-security, aws-lambda, azure-functions, function-hardening, supply-chain]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Securing Serverless Functions

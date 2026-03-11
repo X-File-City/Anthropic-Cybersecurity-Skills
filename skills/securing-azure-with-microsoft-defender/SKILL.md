@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [microsoft-defender, azure-security, cnapp, secure-score, cloud-workload-protection]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Securing Azure with Microsoft Defender

@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [physical-security, red-team, tailgating, badge-cloning, lock-picking, rfid, physical-pentest]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Physical Intrusion Assessment

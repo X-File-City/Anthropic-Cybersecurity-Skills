@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [openvas, gvm, authenticated-scan, vulnerability-scanning, greenbone, network-security, credentialed-scan]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Authenticated Scan with OpenVAS

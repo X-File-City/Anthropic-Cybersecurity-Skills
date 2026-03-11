@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, mitre-attack, threat-modeling, ttp, detection-coverage, attack-navigator, risk-assessment]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Threat Modeling with MITRE ATT&CK
 

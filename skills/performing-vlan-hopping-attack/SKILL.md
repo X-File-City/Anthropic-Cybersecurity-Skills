@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, vlan-hopping, layer2-attack, switch-security, 802.1q]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing VLAN Hopping Attack
 

@@ -10,7 +10,7 @@ subdomain: security-operations
 tags: [performing, dns, tunneling, detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing DNS Tunneling Detection

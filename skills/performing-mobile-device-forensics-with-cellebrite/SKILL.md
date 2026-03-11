@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, mobile-forensics, cellebrite, smartphone-analysis, ios-forensics, android-forensics]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Mobile Device Forensics with Cellebrite

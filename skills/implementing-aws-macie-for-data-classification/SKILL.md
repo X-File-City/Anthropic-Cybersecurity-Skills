@@ -6,7 +6,7 @@ subdomain: cloud-security
 tags: [aws, macie, data-classification, s3, pii, sensitive-data, dlp, compliance]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing AWS Macie for Data Classification

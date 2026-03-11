@@ -9,7 +9,7 @@ subdomain: zero-trust-architecture
 tags: [microsegmentation, guardicore, akamai, zero-trust, east-west-traffic, network-segmentation, lateral-movement]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Microsegmentation with Guardicore

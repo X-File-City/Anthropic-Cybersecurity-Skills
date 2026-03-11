@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, csrf, owasp, web-security, session-management, burpsuite]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing CSRF Attack Simulation

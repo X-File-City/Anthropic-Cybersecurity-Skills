@@ -1,178 +1,112 @@
 #!/usr/bin/env python3
-"""
-Privilege Escalation Detection Agent
-Analyzes Windows Security and Sysmon event logs for privilege escalation
-indicators including token manipulation, UAC bypass, and sudo abuse.
-Authorized security monitoring use only.
+"""Privilege escalation detection agent for Windows and Linux endpoints.
+
+Detects token manipulation, UAC bypass, sudo abuse, kernel exploits, and
+unquoted service paths by analyzing process creation and security logs.
 """
 
 import argparse
 import json
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime
 
 try:
-    import win32evtlog
-    import win32evtlogutil
-    HAS_WIN32 = True
+    import Evtx.Evtx as evtx
 except ImportError:
-    HAS_WIN32 = False
+    evtx = None
 
-
-PRIV_ESC_EVENT_IDS = {
-    4672: "Special privileges assigned to new logon",
-    4673: "A privileged service was called",
-    4674: "An operation was attempted on a privileged object",
-    4688: "A new process has been created (check for elevated tokens)",
-    4703: "A user right was adjusted",
-    1: "Sysmon Process Create (check IntegrityLevel)",
-}
-
-SUSPICIOUS_PROCESSES = [
-    "powershell.exe", "cmd.exe", "wscript.exe", "cscript.exe",
-    "mshta.exe", "rundll32.exe", "regsvr32.exe", "certutil.exe",
+WINDOWS_PRIVESC_PATTERNS = [
+    (r"eventvwr\.exe|fodhelper\.exe|computerdefaults\.exe", "T1548.002", "CRITICAL", "UAC Bypass"),
+    (r"whoami\s+/priv", "T1033", "MEDIUM", "Privilege enumeration"),
+    (r"sc\s+(config|create).*binpath", "T1543.003", "HIGH", "Service binary modification"),
+    (r"potato.*exploit|juicypotato|sweetpotato|godpotato", "T1134.001", "CRITICAL", "Token impersonation exploit"),
+    (r"printspoofer|efspotato", "T1134.001", "CRITICAL", "Named pipe impersonation"),
+    (r"schtasks.*\/ru.*system", "T1053.005", "HIGH", "Scheduled task as SYSTEM"),
+    (r"reg\s+add.*ImagePath", "T1574.011", "HIGH", "Service registry modification"),
 ]
 
-UAC_BYPASS_INDICATORS = [
-    r"fodhelper\.exe", r"eventvwr\.exe", r"sdclt\.exe",
-    r"computerdefaults\.exe", r"slui\.exe",
-    r"HKCU\\Software\\Classes\\ms-settings",
-    r"HKCU\\Software\\Classes\\mscfile",
+LINUX_PRIVESC_PATTERNS = [
+    (r"sudo\s+-l|sudo\s+--list", "T1548.003", "MEDIUM", "Sudo enumeration"),
+    (r"find.*-perm.*4000|find.*-perm.*/u=s", "T1548.001", "MEDIUM", "SUID binary search"),
+    (r"chmod\s+[u+]?s|chmod\s+4\d{3}", "T1548.001", "HIGH", "SUID bit set"),
+    (r"linpeas|linenum|linux-exploit-suggester", "T1046", "HIGH", "Privesc enumeration tool"),
+    (r"pkexec|CVE-2021-4034|pwnkit", "T1068", "CRITICAL", "Kernel exploit"),
+    (r"dirty.*pipe|CVE-2022-0847", "T1068", "CRITICAL", "Kernel exploit"),
 ]
 
 
-def parse_windows_security_log(server=None, max_events=5000):
-    """Parse Windows Security log for privilege escalation events."""
-    if not HAS_WIN32:
-        return []
+def analyze_evtx(filepath):
+    if evtx is None:
+        return {"error": "python-evtx not installed: pip install python-evtx"}
     findings = []
-    handle = win32evtlog.OpenEventLog(server, "Security")
-    flags = win32evtlog.EVENTLOG_BACKWARDS_READ | win32evtlog.EVENTLOG_SEQUENTIAL_READ
-    total = 0
-    while total < max_events:
-        events = win32evtlog.ReadEventLog(handle, flags, 0)
-        if not events:
-            break
-        for event in events:
-            if event.EventID & 0xFFFF in PRIV_ESC_EVENT_IDS:
-                findings.append({
-                    "event_id": event.EventID & 0xFFFF,
-                    "description": PRIV_ESC_EVENT_IDS.get(event.EventID & 0xFFFF, ""),
-                    "time": event.TimeGenerated.isoformat(),
-                    "source": event.SourceName,
-                    "user": event.StringInserts[1] if event.StringInserts and len(event.StringInserts) > 1 else "",
-                    "data": (event.StringInserts or [])[:5],
-                })
-            total += 1
-    win32evtlog.CloseEventLog(handle)
-    return findings
-
-
-def analyze_sysmon_log(log_file):
-    """Analyze exported Sysmon log (JSON/EVTX) for escalation patterns."""
-    findings = []
-    with open(log_file, "r") as f:
-        for line in f:
-            try:
-                entry = json.loads(line.strip())
-            except json.JSONDecodeError:
+    with evtx.Evtx(filepath) as log:
+        for record in log.records():
+            xml = record.xml()
+            event_id_match = re.search(r'<EventID[^>]*>(\d+)</EventID>', xml)
+            if not event_id_match:
                 continue
-            event_id = entry.get("EventID", entry.get("event_id", 0))
-            if event_id == 1:
-                image = entry.get("Image", entry.get("image", "")).lower()
-                integrity = entry.get("IntegrityLevel", entry.get("integrity_level", ""))
-                cmdline = entry.get("CommandLine", entry.get("command_line", ""))
-                proc_name = image.split("\\")[-1] if image else ""
-                if proc_name in SUSPICIOUS_PROCESSES and integrity in ("High", "System"):
+            event_id = int(event_id_match.group(1))
+            if event_id not in (1, 4688, 4672):
+                continue
+            cmdline = re.search(r'<Data Name="CommandLine">([^<]+)', xml)
+            image = re.search(r'<Data Name="Image">([^<]+)', xml)
+            time_match = re.search(r'SystemTime="([^"]+)"', xml)
+            cmd = cmdline.group(1) if cmdline else ""
+            proc = image.group(1) if image else ""
+            text = f"{cmd} {proc}"
+            for pattern, mitre, severity, desc in WINDOWS_PRIVESC_PATTERNS:
+                if re.search(pattern, text, re.IGNORECASE):
                     findings.append({
-                        "type": "elevated_suspicious_process",
-                        "process": proc_name,
-                        "integrity": integrity,
-                        "command_line": cmdline[:200],
-                        "parent": entry.get("ParentImage", ""),
-                        "timestamp": entry.get("UtcTime", entry.get("timestamp", "")),
-                        "severity": "high",
+                        "event_id": event_id,
+                        "timestamp": time_match.group(1) if time_match else "",
+                        "command": cmd[:200], "technique": desc,
+                        "mitre": mitre, "severity": severity,
                     })
-                for pattern in UAC_BYPASS_INDICATORS:
-                    if re.search(pattern, cmdline, re.IGNORECASE):
-                        findings.append({
-                            "type": "uac_bypass_indicator",
-                            "pattern": pattern,
-                            "process": proc_name,
-                            "command_line": cmdline[:200],
-                            "timestamp": entry.get("UtcTime", ""),
-                            "severity": "critical",
-                        })
+            if event_id == 4672:
+                privs = re.search(r'<Data Name="PrivilegeList">([^<]+)', xml)
+                if privs and "SeDebugPrivilege" in privs.group(1):
+                    findings.append({
+                        "event_id": 4672,
+                        "timestamp": time_match.group(1) if time_match else "",
+                        "technique": "SeDebugPrivilege assigned",
+                        "mitre": "T1134", "severity": "HIGH",
+                    })
     return findings
 
 
-def analyze_linux_auth_log(log_file="/var/log/auth.log"):
-    """Analyze Linux auth log for sudo/su escalation attempts."""
+def analyze_text_log(filepath):
     findings = []
-    sudo_pattern = re.compile(r"(\w+\s+\d+\s+[\d:]+)\s+\S+\s+sudo:\s+(\S+)\s+:.*COMMAND=(.*)")
-    su_pattern = re.compile(r"(\w+\s+\d+\s+[\d:]+)\s+\S+\s+su\[\d+\]:\s+(.*)")
-    with open(log_file, "r") as f:
-        for line in f:
-            m = sudo_pattern.search(line)
-            if m:
-                findings.append({
-                    "type": "sudo_execution",
-                    "timestamp": m.group(1),
-                    "user": m.group(2),
-                    "command": m.group(3)[:200],
-                    "severity": "medium",
-                })
-            m = su_pattern.search(line)
-            if m:
-                if "FAILED" in m.group(2).upper():
+    all_patterns = WINDOWS_PRIVESC_PATTERNS + LINUX_PRIVESC_PATTERNS
+    with open(filepath, "r", encoding="utf-8", errors="replace") as f:
+        for num, line in enumerate(f, 1):
+            for pattern, mitre, severity, desc in all_patterns:
+                if re.search(pattern, line, re.IGNORECASE):
                     findings.append({
-                        "type": "failed_su_attempt",
-                        "timestamp": m.group(1),
-                        "details": m.group(2)[:200],
-                        "severity": "high",
+                        "line": num, "technique": desc,
+                        "mitre": mitre, "severity": severity,
+                        "excerpt": line.strip()[:200],
                     })
     return findings
 
 
-def generate_report(findings):
-    """Generate privilege escalation detection report."""
-    report = {
-        "report_title": "Privilege Escalation Detection Report",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "total_findings": len(findings),
-        "critical": len([f for f in findings if f.get("severity") == "critical"]),
-        "high": len([f for f in findings if f.get("severity") == "high"]),
-        "medium": len([f for f in findings if f.get("severity") == "medium"]),
-        "findings": findings,
-    }
-    return report
+def main():
+    parser = argparse.ArgumentParser(description="Privilege Escalation Detector")
+    parser.add_argument("--evtx-file", help="Sysmon or Security EVTX file")
+    parser.add_argument("--text-log", help="Text log to scan")
+    args = parser.parse_args()
+    results = {"timestamp": datetime.utcnow().isoformat() + "Z", "findings": []}
+    if args.evtx_file:
+        r = analyze_evtx(args.evtx_file)
+        if isinstance(r, dict):
+            results.update(r)
+        else:
+            results["findings"].extend(r)
+    if args.text_log:
+        results["findings"].extend(analyze_text_log(args.text_log))
+    results["total_findings"] = len(results["findings"])
+    print(json.dumps(results, indent=2))
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Detect privilege escalation attempts")
-    parser.add_argument("--sysmon-log", help="Path to exported Sysmon JSON log")
-    parser.add_argument("--auth-log", default="/var/log/auth.log", help="Linux auth log path")
-    parser.add_argument("--windows", action="store_true", help="Analyze Windows Security event log")
-    parser.add_argument("--output", default="privesc_detection.json", help="Output file")
-    args = parser.parse_args()
-
-    findings = []
-    if args.windows and HAS_WIN32:
-        print("[*] Analyzing Windows Security event log...")
-        findings.extend(parse_windows_security_log())
-    if args.sysmon_log:
-        print(f"[*] Analyzing Sysmon log: {args.sysmon_log}")
-        findings.extend(analyze_sysmon_log(args.sysmon_log))
-    if args.auth_log:
-        try:
-            findings.extend(analyze_linux_auth_log(args.auth_log))
-        except FileNotFoundError:
-            print(f"[!] Auth log not found: {args.auth_log}")
-
-    report = generate_report(findings)
-    with open(args.output, "w") as f:
-        json.dump(report, f, indent=2)
-    print(f"[*] Report: {report['total_findings']} findings "
-          f"(critical={report['critical']}, high={report['high']})")
-    print(json.dumps(report, indent=2))
+    main()

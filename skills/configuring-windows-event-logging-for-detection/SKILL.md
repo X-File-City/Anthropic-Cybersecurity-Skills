@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, windows-security, event-logging, audit-policy, detection-engineering]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring Windows Event Logging for Detection
 

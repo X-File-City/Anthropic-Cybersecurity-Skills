@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [dnstwist, typosquatting, phishing, domain-monitoring, brand-protection, homograph, dns, threat-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Typosquatting Domains with DNSTwist
 

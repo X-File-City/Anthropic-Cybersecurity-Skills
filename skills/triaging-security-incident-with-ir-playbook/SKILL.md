@@ -6,7 +6,7 @@ subdomain: incident-response
 tags: [incident-response, triage, playbook, severity-classification, soc]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Triaging Security Incidents with IR Playbooks

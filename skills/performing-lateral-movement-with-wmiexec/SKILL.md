@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, lateral-movement, wmiexec, wmi, post-exploitation, impacket, windows]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Lateral Movement with WMIExec
 

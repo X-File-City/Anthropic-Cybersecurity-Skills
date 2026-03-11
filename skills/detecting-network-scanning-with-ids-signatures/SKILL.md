@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [ids, nmap-detection, port-scanning, snort, suricata, reconnaissance, network-security, signature-detection, threshold-rules]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Network Scanning with IDS Signatures

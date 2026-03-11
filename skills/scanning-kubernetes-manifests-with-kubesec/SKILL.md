@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [kubesec, kubernetes, manifest-scanning, security-scanning, devsecops, misconfiguration, static-analysis, ci-cd]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Scanning Kubernetes Manifests with Kubesec

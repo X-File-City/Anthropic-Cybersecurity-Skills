@@ -12,7 +12,7 @@ subdomain: api-security
 tags: [api-security, oauth2, oidc, authentication, redirect-uri, token-security]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Testing OAuth2 Implementation Flaws
 

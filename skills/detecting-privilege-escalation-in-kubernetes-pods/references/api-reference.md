@@ -1,41 +1,52 @@
 # API Reference: Detecting Privilege Escalation in Kubernetes Pods
 
-## Kubernetes Python Client API
+## Security Context Checks
 
-| Method | Description |
-|--------|-------------|
-| `CoreV1Api().list_pod_for_all_namespaces()` | List all pods across namespaces |
-| `CoreV1Api().list_namespaced_pod(namespace)` | List pods in a specific namespace |
-| `RbacAuthorizationV1Api().list_cluster_role_binding()` | List all ClusterRoleBindings |
-| `RbacAuthorizationV1Api().list_namespaced_role_binding(ns)` | List RoleBindings in namespace |
+| Check | Risk | Description |
+|-------|------|-------------|
+| privileged: true | CRITICAL | Full host access |
+| allowPrivilegeEscalation | HIGH | setuid escalation |
+| runAsUser: 0 | HIGH | Running as root |
+| hostPID: true | CRITICAL | Host PID namespace |
+| hostNetwork: true | HIGH | Host network access |
 
-## Pod SecurityContext Fields
+## Dangerous Capabilities
 
-| Field | Risk |
-|-------|------|
-| `privileged: true` | Full host access, container escape |
-| `allowPrivilegeEscalation: true` | Enables setuid/setgid binaries |
-| `runAsUser: 0` | Container runs as root |
-| `hostPID: true` | Access to host process namespace |
-| `hostNetwork: true` | Access to host network stack |
-| `capabilities.add: [SYS_ADMIN]` | Near-root capabilities |
+| Capability | Risk |
+|------------|------|
+| SYS_ADMIN | Container escape |
+| SYS_PTRACE | Process debugging |
+| SYS_MODULE | Kernel module loading |
+| NET_ADMIN | Network manipulation |
 
-## Key Libraries
+## kubectl Audit Commands
 
-- **kubernetes** (`pip install kubernetes`): Official Python client for Kubernetes API
-- **config.load_kube_config()**: Load kubeconfig from file for external access
-- **config.load_incluster_config()**: Load service account config when running inside a pod
+```bash
+kubectl get pods -A -o json | jq '.items[] | select(.spec.containers[].securityContext.privileged==true)'
+kubectl auth can-i --list --as=system:serviceaccount:ns:sa
+```
 
-## Configuration
+## Pod Security Standards
 
-| Variable | Description |
-|----------|-------------|
-| `DANGEROUS_CAPABILITIES` | Linux capabilities that enable privilege escalation |
-| `kubeconfig` | Path to Kubernetes configuration file |
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    pod-security.kubernetes.io/enforce: restricted
+```
 
-## References
+## Falco Rules
 
-- [Kubernetes Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
-- [MITRE ATT&CK T1611 - Escape to Host](https://attack.mitre.org/techniques/T1611/)
-- [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
-- [kubernetes-client/python](https://github.com/kubernetes-client/python)
+```yaml
+- rule: Pod with Privileged Container
+  condition: kevt and kcreate and container.privileged=true
+  priority: CRITICAL
+```
+
+## CLI Usage
+
+```bash
+python agent.py --namespace default
+python agent.py --json-file pods.json
+```

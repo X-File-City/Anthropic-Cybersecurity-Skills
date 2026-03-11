@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, waf, api-gateway, rate-limiting, bot-protection, owasp]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Securing API Gateway with AWS WAF

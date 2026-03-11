@@ -6,7 +6,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, cloudtrail, anomaly-detection, threat-detection, boto3]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Detecting AWS CloudTrail Anomalies
 

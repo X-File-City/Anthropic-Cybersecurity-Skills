@@ -6,7 +6,7 @@ subdomain: penetration-testing
 tags: [thick-client, desktop-application, dnSpy, Procmon, DLL-hijacking, binary-analysis, API-interception]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Thick Client Application Penetration Test

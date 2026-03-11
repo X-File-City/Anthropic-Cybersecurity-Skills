@@ -17,16 +17,26 @@
 
 ---
 
+> **Warning: Community Project -- Not affiliated with Anthropic PBC.**
+> This is an independent, community-created collection. "Anthropic" in the repository name refers to the agentskills.io standard compatibility, not official Anthropic affiliation.
+
 The largest open-source collection of cybersecurity skills for AI agents. Every skill follows the [agentskills.io](https://agentskills.io) open standard and works instantly with Claude Code, GitHub Copilot, OpenAI Codex CLI, Cursor, Gemini CLI, and 20+ other platforms.
 
-## Quick Start (30 seconds)
+## Quick Start
 
+**Method 1: npx skills**
 ```bash
-# Add as Claude Code marketplace
-/plugin marketplace add mukul975/Anthropic-Cybersecurity-Skills
+npx skills add mukul975/Anthropic-Cybersecurity-Skills
+```
 
-# Or clone directly
-git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills .skills/cybersecurity
+**Method 2: Claude Code plugin**
+```
+/plugin marketplace add mukul975/Anthropic-Cybersecurity-Skills
+```
+
+**Method 3: Manual clone**
+```bash
+git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git
 ```
 
 ## Skill Categories

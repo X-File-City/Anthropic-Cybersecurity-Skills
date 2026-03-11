@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [hashicorp-vault, secrets-management, dynamic-secrets, credential-rotation, zero-trust]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Secrets Management with Vault

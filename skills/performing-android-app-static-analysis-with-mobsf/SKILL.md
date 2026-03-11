@@ -12,7 +12,7 @@ subdomain: mobile-security
 author: mahipal
 tags: [mobile-security, android, mobsf, static-analysis, owasp-mobile, penetration-testing]
 version: 1.0.0
-license: MIT
+license: Apache-2.0
 ---
 # Performing Android App Static Analysis with MobSF
 

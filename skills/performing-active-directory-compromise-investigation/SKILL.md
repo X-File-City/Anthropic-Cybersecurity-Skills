@@ -6,7 +6,7 @@ subdomain: incident-response
 tags: [active-directory, compromise-investigation, identity-forensics, kerberos, lateral-movement, dfir, ntds-dit, golden-ticket]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Active Directory Compromise Investigation

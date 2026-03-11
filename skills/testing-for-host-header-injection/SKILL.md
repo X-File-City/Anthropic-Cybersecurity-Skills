@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [host-header-injection, password-reset-poisoning, cache-poisoning, virtual-host, web-security, header-manipulation, ssrf]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing for Host Header Injection

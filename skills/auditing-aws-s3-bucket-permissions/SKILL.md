@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, s3, bucket-permissions, data-protection, access-control]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Auditing AWS S3 Bucket Permissions

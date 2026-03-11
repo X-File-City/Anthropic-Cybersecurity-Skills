@@ -6,7 +6,7 @@ subdomain: incident-response
 tags: [cloud-security, incident-containment, aws, azure, gcp, cloud-forensics, credential-revocation, network-isolation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Cloud Incident Containment Procedures

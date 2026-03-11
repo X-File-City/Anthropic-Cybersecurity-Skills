@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, active-directory, tiered-model, paw, esae]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring Active Directory Tiered Model
 

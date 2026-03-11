@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, network-forensics, wireshark, pcap, packet-analysis, traffic-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Network Forensics with Wireshark

@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, splunk, windows-events, sysmon, event-logs, mitre-attack, active-directory]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Windows Event Logs in Splunk
 

@@ -13,7 +13,7 @@ subdomain: ransomware-defense
 tags: [ransomware, recovery, incident-response, backup, defense]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Recovering from Ransomware Attack
 

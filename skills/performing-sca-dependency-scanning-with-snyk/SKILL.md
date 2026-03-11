@@ -11,7 +11,7 @@ subdomain: devsecops
 tags: [devsecops, cicd, sca, snyk, dependency-scanning, secure-sdlc]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing SCA Dependency Scanning with Snyk

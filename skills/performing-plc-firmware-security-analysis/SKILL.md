@@ -12,7 +12,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, scada, industrial-control, iec62443, firmware-analysis, plc-security]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing PLC Firmware Security Analysis

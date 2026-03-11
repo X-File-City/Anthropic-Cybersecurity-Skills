@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, cloudtrail, log-analysis, threat-detection, forensics]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing CloudTrail Log Analysis

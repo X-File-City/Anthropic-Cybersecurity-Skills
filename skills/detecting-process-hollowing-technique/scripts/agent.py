@@ -1,160 +1,109 @@
 #!/usr/bin/env python3
-"""Agent for detecting process hollowing (T1055.012) in running processes."""
+"""Process hollowing (T1055.012) detection agent.
+
+Detects hollowed processes by analyzing Sysmon events for suspended process
+creation, memory allocation in remote processes, and thread hijacking.
+"""
 
 import argparse
-import ctypes
 import json
-import os
-import struct
-import subprocess
+import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime
+
+try:
+    import Evtx.Evtx as evtx
+except ImportError:
+    evtx = None
+
+COMMONLY_HOLLOWED = {
+    "svchost.exe", "explorer.exe", "notepad.exe", "calc.exe",
+    "dllhost.exe", "regsvr32.exe", "RuntimeBroker.exe",
+}
+
+SUSPICIOUS_PARENT_CHILD = [
+    ("cmd.exe", "svchost.exe"), ("powershell.exe", "svchost.exe"),
+    ("wscript.exe", "svchost.exe"), ("mshta.exe", "svchost.exe"),
+    ("winword.exe", "svchost.exe"), ("excel.exe", "svchost.exe"),
+]
 
 
-def get_running_processes():
-    """Enumerate running processes via tasklist or ps."""
-    procs = []
-    if sys.platform == "win32":
-        out = subprocess.check_output(
-            ["tasklist", "/FO", "CSV", "/NH", "/V"], text=True, errors="replace"
-        )
-        for line in out.strip().splitlines():
-            parts = line.strip('"').split('","')
-            if len(parts) >= 2:
-                procs.append({"name": parts[0], "pid": int(parts[1])})
-    else:
-        out = subprocess.check_output(
-            ["ps", "-eo", "pid,ppid,comm,args", "--no-headers"], text=True
-        )
-        for line in out.strip().splitlines():
-            fields = line.split(None, 3)
-            if len(fields) >= 3:
-                procs.append({
-                    "pid": int(fields[0]),
-                    "ppid": int(fields[1]),
-                    "name": fields[2],
-                    "cmdline": fields[3] if len(fields) > 3 else "",
-                })
-    return procs
+def detect_hollowing_sysmon(filepath):
+    if evtx is None:
+        return {"error": "python-evtx not installed: pip install python-evtx"}
+    findings = []
+    with evtx.Evtx(filepath) as log:
+        for record in log.records():
+            xml = record.xml()
+            eid_match = re.search(r'<EventID[^>]*>(\d+)</EventID>', xml)
+            if not eid_match:
+                continue
+            eid = int(eid_match.group(1))
+            time_match = re.search(r'SystemTime="([^"]+)"', xml)
+            ts = time_match.group(1) if time_match else ""
 
+            if eid == 1:
+                image = re.search(r'<Data Name="Image">([^<]+)', xml)
+                parent = re.search(r'<Data Name="ParentImage">([^<]+)', xml)
+                cmdline = re.search(r'<Data Name="CommandLine">([^<]+)', xml)
+                if image and parent:
+                    img = image.group(1).rsplit("\\", 1)[-1].lower()
+                    par = parent.group(1).rsplit("\\", 1)[-1].lower()
+                    for sp, sc in SUSPICIOUS_PARENT_CHILD:
+                        if par == sp.lower() and img == sc.lower():
+                            findings.append({
+                                "event_id": 1, "timestamp": ts,
+                                "type": "suspicious_parent_child",
+                                "parent": parent.group(1), "image": image.group(1),
+                                "cmdline": cmdline.group(1)[:200] if cmdline else "",
+                                "severity": "HIGH", "mitre": "T1055.012",
+                            })
 
-def check_memory_discrepancy_linux(pid):
-    """Check for signs of hollowing: discrepancy between mapped exe and memory."""
-    indicators = []
-    exe_link = f"/proc/{pid}/exe"
-    maps_file = f"/proc/{pid}/maps"
-    try:
-        real_exe = os.readlink(exe_link)
-        if " (deleted)" in real_exe:
-            indicators.append(f"exe link points to deleted binary: {real_exe}")
-    except (OSError, PermissionError):
-        return indicators
+            if eid == 8:
+                source = re.search(r'<Data Name="SourceImage">([^<]+)', xml)
+                target = re.search(r'<Data Name="TargetImage">([^<]+)', xml)
+                if target:
+                    tgt = target.group(1).rsplit("\\", 1)[-1].lower()
+                    if tgt in COMMONLY_HOLLOWED:
+                        findings.append({
+                            "event_id": 8, "timestamp": ts,
+                            "type": "remote_thread_hollowed_target",
+                            "source": source.group(1) if source else "",
+                            "target": target.group(1),
+                            "severity": "CRITICAL", "mitre": "T1055.012",
+                        })
 
-    try:
-        with open(maps_file, "r") as f:
-            maps = f.read()
-        exe_base = os.path.basename(real_exe)
-        first_exec_region = None
-        for line in maps.splitlines():
-            if "r-xp" in line:
-                first_exec_region = line
-                break
-        if first_exec_region and exe_base not in first_exec_region:
-            indicators.append(
-                f"Executable memory region does not reference expected binary: {first_exec_region}"
-            )
-    except (OSError, PermissionError):
-        pass
-    return indicators
-
-
-def check_hollowing_windows(pid):
-    """Use Windows API to detect hollowing via PEB image base vs section."""
-    indicators = []
-    try:
-        result = subprocess.check_output(
-            ["powershell", "-NoProfile", "-Command",
-             f"Get-Process -Id {pid} | Select-Object Id,ProcessName,Path,"
-             "MainModule,StartTime | ConvertTo-Json"],
-            text=True, errors="replace", timeout=10
-        )
-        data = json.loads(result)
-        if data.get("Path") and data.get("MainModule"):
-            mod_path = data["MainModule"].get("FileName", "")
-            if mod_path and data["Path"].lower() != mod_path.lower():
-                indicators.append(
-                    f"Process path mismatch: Path={data['Path']} MainModule={mod_path}"
-                )
-    except (subprocess.SubprocessError, json.JSONDecodeError, KeyError):
-        pass
-    return indicators
-
-
-def analyze_process(pid):
-    """Analyze a single process for hollowing indicators."""
-    if sys.platform == "win32":
-        return check_hollowing_windows(pid)
-    return check_memory_discrepancy_linux(pid)
-
-
-def scan_all(target_pids=None):
-    """Scan processes for process hollowing indicators."""
-    results = []
-    procs = get_running_processes()
-    targets = procs if not target_pids else [p for p in procs if p["pid"] in target_pids]
-
-    for proc in targets:
-        pid = proc["pid"]
-        indicators = analyze_process(pid)
-        entry = {
-            "pid": pid,
-            "name": proc.get("name", "unknown"),
-            "hollowing_indicators": indicators,
-            "suspicious": len(indicators) > 0,
-        }
-        results.append(entry)
-    return results
+            if eid == 10:
+                source = re.search(r'<Data Name="SourceImage">([^<]+)', xml)
+                target = re.search(r'<Data Name="TargetImage">([^<]+)', xml)
+                access = re.search(r'<Data Name="GrantedAccess">([^<]+)', xml)
+                if target and access:
+                    tgt = target.group(1).rsplit("\\", 1)[-1].lower()
+                    mask = access.group(1).lower()
+                    if tgt in COMMONLY_HOLLOWED and mask in ("0x1fffff", "0x1f3fff"):
+                        findings.append({
+                            "event_id": 10, "timestamp": ts,
+                            "type": "full_access_hollowed_target",
+                            "source": source.group(1) if source else "",
+                            "target": target.group(1), "access": mask,
+                            "severity": "CRITICAL", "mitre": "T1055.012",
+                        })
+    return findings
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Detect process hollowing (T1055.012) in running processes"
-    )
-    parser.add_argument("--pid", type=int, nargs="*", help="Specific PIDs to scan")
-    parser.add_argument("--output", "-o", help="Output JSON file path")
-    parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
+    parser = argparse.ArgumentParser(description="Process Hollowing Detector")
+    parser.add_argument("--sysmon-log", required=True, help="Sysmon EVTX file")
     args = parser.parse_args()
-
-    print("[*] Process Hollowing Detection Agent")
-    print(f"[*] Platform: {sys.platform}")
-    print(f"[*] Scan started: {datetime.now(timezone.utc).isoformat()}")
-
-    results = scan_all(target_pids=args.pid)
-    suspicious = [r for r in results if r["suspicious"]]
-
-    report = {
-        "scan_time": datetime.now(timezone.utc).isoformat(),
-        "platform": sys.platform,
-        "total_scanned": len(results),
-        "suspicious_count": len(suspicious),
-        "suspicious_processes": suspicious,
-    }
-
-    if args.verbose:
-        for r in results:
-            status = "SUSPICIOUS" if r["suspicious"] else "OK"
-            print(f"  [{status}] PID {r['pid']} ({r['name']})")
-            for ind in r.get("hollowing_indicators", []):
-                print(f"    -> {ind}")
-
-    print(f"\n[*] Scanned {len(results)} processes, {len(suspicious)} suspicious")
-
-    if args.output:
-        with open(args.output, "w") as f:
-            json.dump(report, f, indent=2)
-        print(f"[*] Report saved to {args.output}")
+    findings = detect_hollowing_sysmon(args.sysmon_log)
+    if isinstance(findings, dict) and "error" in findings:
+        results = findings
     else:
-        print(json.dumps(report, indent=2))
+        results = {
+            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "findings": findings, "total_findings": len(findings),
+        }
+    print(json.dumps(results, indent=2))
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ subdomain: threat-hunting
 tags: [powershell, script-block-logging, event-4104, amsi, threat-hunting, evtx, obfuscation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Hunting for Anomalous PowerShell Execution
 

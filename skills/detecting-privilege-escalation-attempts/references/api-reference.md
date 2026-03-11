@@ -1,49 +1,44 @@
 # API Reference: Detecting Privilege Escalation Attempts
 
-## Windows Security Event IDs
+## Windows Privilege Escalation Techniques
 
-| Event ID | Description |
-|----------|-------------|
-| 4672 | Special privileges assigned to new logon |
-| 4673 | A privileged service was called |
-| 4674 | Operation attempted on a privileged object |
-| 4688 | New process created (token elevation check) |
-| 4703 | User right was adjusted |
+| Technique | MITRE ID | Detection |
+|-----------|----------|-----------|
+| UAC Bypass | T1548.002 | eventvwr.exe, fodhelper.exe |
+| Token Manipulation | T1134 | SeDebugPrivilege (Event 4672) |
+| Service Modification | T1543.003 | sc config binpath= |
+| Potato Exploits | T1134.001 | JuicyPotato, PrintSpoofer |
+| Scheduled Task | T1053.005 | schtasks /ru SYSTEM |
 
-## Sysmon Event IDs
+## Linux Privilege Escalation Techniques
 
-| Event ID | Description |
-|----------|-------------|
-| 1 | Process Create with IntegrityLevel field |
-| 10 | ProcessAccess (token duplication detection) |
-| 13 | RegistryEvent (UAC bypass registry keys) |
+| Technique | MITRE ID | Detection |
+|-----------|----------|-----------|
+| SUID Abuse | T1548.001 | find -perm 4000 |
+| Sudo Exploitation | T1548.003 | sudo -l enumeration |
+| Kernel Exploit | T1068 | DirtyPipe, PwnKit |
+| Cron Abuse | T1053.003 | crontab modification |
 
-## Key Libraries
+## Key Windows Event IDs
 
-- **pywin32** (`pip install pywin32`): `win32evtlog.OpenEventLog()`, `ReadEventLog()`, `CloseEventLog()`
-- **python-evtx** (`pip install python-evtx`): Parse EVTX files offline with `Evtx.Evtx(path)`
-- **re** (stdlib): Pattern matching for UAC bypass indicators in command lines
+| Event ID | Detection |
+|----------|-----------|
+| 4672 | Special Privileges Assigned |
+| 4688 | Process Creation |
+| Sysmon 1 | Process Create with cmdline |
 
-## UAC Bypass Detection Patterns
+## Splunk SPL
 
-| Binary | Registry Key |
-|--------|-------------|
-| `fodhelper.exe` | `HKCU\Software\Classes\ms-settings\shell\open\command` |
-| `eventvwr.exe` | `HKCU\Software\Classes\mscfile\shell\open\command` |
-| `sdclt.exe` | `HKCU\Software\Classes\exefile\shell\runas\command` |
-| `computerdefaults.exe` | `HKCU\Software\Classes\ms-settings\shell\open\command` |
+```spl
+index=wineventlog (EventCode=4672 OR EventCode=4688)
+| where match(PrivilegeList, "SeDebugPrivilege")
+   OR match(CommandLine, "(?i)(fodhelper|juicypotato)")
+| table _time User CommandLine Computer
+```
 
-## Configuration
+## CLI Usage
 
-| Variable | Description |
-|----------|-------------|
-| `PRIV_ESC_EVENT_IDS` | Map of Security event IDs to descriptions |
-| `SUSPICIOUS_PROCESSES` | List of processes to flag when running elevated |
-| `UAC_BYPASS_INDICATORS` | Regex patterns for known UAC bypass techniques |
-
-## References
-
-- [MITRE ATT&CK T1548 - Abuse Elevation Control Mechanism](https://attack.mitre.org/techniques/T1548/)
-- [MITRE ATT&CK T1134 - Access Token Manipulation](https://attack.mitre.org/techniques/T1134/)
-- [Windows Security Auditing](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/)
-- [Sysmon Documentation](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
+```bash
+python agent.py --evtx-file Sysmon.evtx
+python agent.py --text-log auth.log
+```

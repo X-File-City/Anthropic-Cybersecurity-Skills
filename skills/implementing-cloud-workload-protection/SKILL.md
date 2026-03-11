@@ -10,7 +10,7 @@ subdomain: cloud-security
 tags: [implementing, cloud, workload, protection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Cloud Workload Protection

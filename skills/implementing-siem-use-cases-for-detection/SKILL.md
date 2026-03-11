@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, siem, use-cases, detection-engineering, mitre-attack, splunk, elastic, sentinel]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing SIEM Use Cases for Detection
 

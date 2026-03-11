@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, mitre-attack, supply-chain, initial-access, t1195, proactive-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting For Supply Chain Compromise

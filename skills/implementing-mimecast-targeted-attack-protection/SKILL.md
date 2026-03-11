@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [mimecast, email-security, targeted-threat-protection, url-protect, impersonation, attachment-sandboxing, phishing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Mimecast Targeted Attack Protection
 

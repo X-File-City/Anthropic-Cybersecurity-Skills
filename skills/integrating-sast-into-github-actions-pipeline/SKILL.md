@@ -11,7 +11,7 @@ subdomain: devsecops
 tags: [devsecops, cicd, sast, codeql, semgrep, secure-sdlc]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Integrating SAST into GitHub Actions Pipeline

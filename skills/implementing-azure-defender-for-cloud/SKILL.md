@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, azure, defender-for-cloud, cspm, cwpp, security-recommendations]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Azure Defender for Cloud

@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [CTI, intelligence-lifecycle, PIR, NIST-SP-800-150, threat-intelligence-program, NIST-CSF]
 version: 1.0.0
 author: team-cybersecurity
-license: MIT
+license: Apache-2.0
 ---
 # Managing Intelligence Lifecycle
 

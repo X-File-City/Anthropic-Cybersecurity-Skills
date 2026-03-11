@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [open-redirect, url-redirect, phishing, owasp, url-validation, redirect-bypass, unvalidated-redirect]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing for Open Redirect Vulnerabilities

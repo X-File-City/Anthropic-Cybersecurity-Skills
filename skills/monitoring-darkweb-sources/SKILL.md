@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [dark-web, OSINT, credential-monitoring, ransomware-leaks, Recorded-Future, SpiderFoot, CTI]
 version: 1.0.0
 author: team-cybersecurity
-license: MIT
+license: Apache-2.0
 ---
 # Monitoring Dark Web Sources
 

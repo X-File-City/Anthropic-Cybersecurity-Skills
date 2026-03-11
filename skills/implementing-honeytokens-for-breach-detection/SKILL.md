@@ -10,7 +10,7 @@ subdomain: security-operations
 tags: [implementing, honeytokens, for, breach]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Honeytokens for Breach Detection

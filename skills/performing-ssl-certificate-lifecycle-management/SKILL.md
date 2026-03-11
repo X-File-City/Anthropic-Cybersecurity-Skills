@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, ssl, certificates, pki, tls, key-management]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing SSL Certificate Lifecycle Management
 

@@ -6,7 +6,7 @@ subdomain: cloud-security
 tags: [azure, entra-id, service-principal, privilege-escalation, credential-abuse, detection, splunk, sentinel]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Azure Service Principal Abuse

@@ -6,7 +6,7 @@ subdomain: devsecops
 tags: [gitlab-ci, devsecops, sast, dast, container-scanning, dependency-scanning, secret-detection, cicd-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building DevSecOps Pipeline with GitLab CI

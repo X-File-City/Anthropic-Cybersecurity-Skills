@@ -6,7 +6,7 @@ subdomain: soc-operations
 tags: [siem, log-onboarding, log-management, data-ingestion, parsing, normalization, soc]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Log Source Onboarding in SIEM

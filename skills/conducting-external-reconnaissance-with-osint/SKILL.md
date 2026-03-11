@@ -12,7 +12,7 @@ subdomain: penetration-testing
 tags: [OSINT, reconnaissance, attack-surface, footprinting, passive-recon]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Conducting External Reconnaissance with OSINT
 

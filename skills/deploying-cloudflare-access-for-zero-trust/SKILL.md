@@ -9,7 +9,7 @@ subdomain: zero-trust-architecture
 tags: [cloudflare, cloudflare-access, zero-trust, cloudflare-tunnel, warp, ztna, cloudflare-one]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Deploying Cloudflare Access for Zero Trust

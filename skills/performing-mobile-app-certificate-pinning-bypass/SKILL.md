@@ -11,7 +11,7 @@ subdomain: mobile-security
 author: mahipal
 tags: [mobile-security, android, ios, certificate-pinning, frida, penetration-testing]
 version: 1.0.0
-license: MIT
+license: Apache-2.0
 ---
 # Performing Mobile App Certificate Pinning Bypass
 

@@ -13,7 +13,7 @@ subdomain: ransomware-defense
 tags: [ransomware, incident-response, tabletop-exercise, defense, preparedness]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Ransomware Tabletop Exercise
 

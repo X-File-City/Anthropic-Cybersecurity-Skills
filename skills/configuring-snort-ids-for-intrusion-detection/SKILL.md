@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, snort, ids, intrusion-detection, rule-writing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring Snort IDS for Intrusion Detection
 

@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, scada, hmi, security-assessment, vulnerability, iec62443, nist-800-82]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing SCADA HMI Security Assessment

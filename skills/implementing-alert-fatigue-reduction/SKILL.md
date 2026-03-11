@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, alert-fatigue, tuning, risk-based-alerting, false-positive, siem, detection-engineering]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Alert Fatigue Reduction
 

@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [digital-forensics, windows, prefetch, execution-history, incident-response, malware-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Windows Prefetch with Python
 

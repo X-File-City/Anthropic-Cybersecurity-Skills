@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, mitre-attack, credential-dumping, edr, lsass, t1003, proactive-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Credential Dumping with EDR

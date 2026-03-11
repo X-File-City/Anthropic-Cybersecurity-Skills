@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, jit, provisioning, zero-trust, least-privilege]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Just-In-Time Access Provisioning
 

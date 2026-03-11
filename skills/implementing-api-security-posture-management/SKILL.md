@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [api-security, aspm, api-posture-management, api-discovery, risk-scoring, api-governance, continuous-monitoring, api-inventory]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing API Security Posture Management

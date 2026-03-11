@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [ddos, cloudflare, ddos-mitigation, rate-limiting, waf, bot-management, layer-7, volumetric-attack, network-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing DDoS Mitigation with Cloudflare

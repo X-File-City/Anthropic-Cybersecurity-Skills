@@ -6,7 +6,7 @@ subdomain: soc-operations
 tags: [splunk, spl, detection-engineering, correlation-search, siem, soc, threat-detection, enterprise-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Detection Rules with Splunk SPL

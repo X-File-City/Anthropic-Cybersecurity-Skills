@@ -11,7 +11,7 @@ subdomain: devsecops
 tags: [devsecops, cicd, trivy, container-security, vulnerability-scanning, secure-sdlc]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Scanning Containers with Trivy in CI/CD

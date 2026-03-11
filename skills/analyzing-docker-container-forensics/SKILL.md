@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, docker, container-forensics, container-security, image-analysis, runtime-investigation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Docker Container Forensics

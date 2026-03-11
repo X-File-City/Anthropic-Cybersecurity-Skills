@@ -12,7 +12,7 @@ subdomain: penetration-testing
 tags: [phishing-simulation, social-engineering, GoPhish, email-security, security-awareness]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Executing Phishing Simulation Campaign
 

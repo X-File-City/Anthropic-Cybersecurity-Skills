@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [kubernetes, rbac, access-control, least-privilege, security-hardening, iam, oidc, service-accounts]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing RBAC Hardening for Kubernetes

@@ -11,7 +11,7 @@ subdomain: threat-intelligence
 tags: [STIX-2.1, TAXII-2.1, OASIS, MISP, CTI, IOC, threat-intelligence, NIST-SP-800-150]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Processing STIX/TAXII Feeds
 

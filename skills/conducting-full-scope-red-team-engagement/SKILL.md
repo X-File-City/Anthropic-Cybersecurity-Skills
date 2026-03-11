@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, adversary-emulation, mitre-attack, penetration-testing, offensive-security, purple-team, ttp-mapping]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Full-Scope Red Team Engagement

@@ -13,7 +13,7 @@ subdomain: api-security
 tags: [api-security, owasp, authentication, jwt, session-management, credential-security]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Testing API Authentication Weaknesses
 

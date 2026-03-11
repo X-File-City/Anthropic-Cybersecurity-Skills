@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, fail2ban, port-scanning, intrusion-prevention, automated-defense]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Detecting Port Scanning with Fail2ban
 

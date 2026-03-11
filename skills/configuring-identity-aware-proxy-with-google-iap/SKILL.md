@@ -9,7 +9,7 @@ subdomain: zero-trust-architecture
 tags: [google-iap, identity-aware-proxy, gcp, zero-trust, access-context-manager, cloud-run, app-engine]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Configuring Identity-Aware Proxy with Google IAP

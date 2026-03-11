@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, authentication, mfa, duo, multi-factor]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring Multi-Factor Authentication with Duo
 

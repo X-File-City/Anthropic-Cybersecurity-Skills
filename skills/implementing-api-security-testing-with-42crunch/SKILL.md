@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [api-security, 42crunch, openapi, api-audit, api-scan, conformance-testing, shift-left, ci-cd-security, owasp-api-top-10]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing API Security Testing with 42Crunch

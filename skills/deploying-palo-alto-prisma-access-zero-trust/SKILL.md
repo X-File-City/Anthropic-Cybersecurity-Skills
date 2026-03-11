@@ -9,7 +9,7 @@ subdomain: zero-trust-architecture
 tags: [prisma-access, palo-alto, ztna, sase, globalprotect, strata-cloud-manager, zero-trust]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Deploying Palo Alto Prisma Access Zero Trust

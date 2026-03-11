@@ -10,7 +10,7 @@ subdomain: malware-analysis
 tags: [malware, dynamic-analysis, sandbox, ANY.RUN, interactive-analysis]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Dynamic Analysis with ANY.RUN

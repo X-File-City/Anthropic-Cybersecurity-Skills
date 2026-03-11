@@ -6,7 +6,7 @@ subdomain: compliance-governance
 tags: [compliance, governance, gdpr, privacy, data-protection, eu-regulation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing GDPR Data Protection Controls
 

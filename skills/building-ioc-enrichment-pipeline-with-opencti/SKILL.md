@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [threat-intelligence, cti, ioc, mitre-attack, stix, opencti, enrichment, virustotal]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building IOC Enrichment Pipeline with OpenCTI
 

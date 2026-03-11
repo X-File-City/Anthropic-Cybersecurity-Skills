@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [mitre-attack, navigator, apt, threat-actor, ttp-analysis, heatmap, detection-gap, threat-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing APT Group with MITRE ATT&CK Navigator
 

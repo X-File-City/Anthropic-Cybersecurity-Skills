@@ -9,7 +9,7 @@ subdomain: zero-trust-architecture
 tags: [beyondcorp, zero-trust, google-cloud, iap, identity-aware-proxy, ztna, access-context-manager]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing BeyondCorp Zero Trust Access Model

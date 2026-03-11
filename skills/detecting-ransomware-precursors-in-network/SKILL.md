@@ -13,7 +13,7 @@ subdomain: ransomware-defense
 tags: [ransomware, detection, network-security, incident-response, defense]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Detecting Ransomware Precursors in Network Traffic
 

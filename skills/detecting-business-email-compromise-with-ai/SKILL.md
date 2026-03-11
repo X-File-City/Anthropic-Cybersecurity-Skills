@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [bec, ai, nlp, machine-learning, email-security, behavioral-analytics, impersonation, fraud-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Detecting Business Email Compromise with AI
 

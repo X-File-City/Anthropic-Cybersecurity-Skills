@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [aitm, evilproxy, evilginx, phishing, mfa-bypass, session-hijacking, reverse-proxy, credential-theft]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Adversary-in-the-Middle Phishing Detection
 

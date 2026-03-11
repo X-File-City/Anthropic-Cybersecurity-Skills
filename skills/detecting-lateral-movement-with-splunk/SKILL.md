@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, mitre-attack, lateral-movement, splunk, siem, proactive-detection, ta0008]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Lateral Movement with Splunk

@@ -12,7 +12,7 @@ subdomain: mobile-security
 author: mahipal
 tags: [mobile-security, ios, frida, reverse-engineering, owasp-mobile, penetration-testing]
 version: 1.0.0
-license: MIT
+license: Apache-2.0
 ---
 # Reverse Engineering iOS App with Frida
 

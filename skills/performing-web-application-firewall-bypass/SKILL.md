@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [waf-bypass, waf-evasion, sql-injection, xss, payload-obfuscation, encoding-bypass, web-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Web Application Firewall Bypass

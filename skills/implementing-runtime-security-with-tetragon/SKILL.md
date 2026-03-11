@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [tetragon, ebpf, runtime-security, kubernetes, cilium, container-security, observability, kernel-security, cncf]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Runtime Security with Tetragon

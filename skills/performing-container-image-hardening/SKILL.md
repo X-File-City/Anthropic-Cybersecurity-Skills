@@ -9,7 +9,7 @@ subdomain: devsecops
 tags: [devsecops, cicd, container-hardening, docker, cis-benchmark, secure-sdlc]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Container Image Hardening

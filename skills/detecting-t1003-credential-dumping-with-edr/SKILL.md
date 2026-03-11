@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, credential-dumping, lsass, mitre-t1003, edr, mimikatz, ntds, sam-database]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting T1003 Credential Dumping with EDR

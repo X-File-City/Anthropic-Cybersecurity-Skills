@@ -6,7 +6,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, cloudtrail, forensics, incident-response, dfir, boto3, s3]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Cloud Forensics with AWS CloudTrail

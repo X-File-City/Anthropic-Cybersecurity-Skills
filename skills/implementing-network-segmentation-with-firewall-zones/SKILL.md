@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [network-segmentation, firewall-zones, vlan, microsegmentation, lateral-movement, zero-trust, acl, east-west-traffic, pci-dss]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Network Segmentation with Firewall Zones

@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, lolbins, living-off-the-land, endpoint-detection, process-monitoring, mitre-t1218, defense-evasion]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting for LOLBins Execution in Endpoint Logs

@@ -11,7 +11,7 @@ subdomain: threat-intelligence
 tags: [MITRE-ATT&CK, ATT&CK-Navigator, Sigma, D3FEND, TTP, detection-engineering, NIST-CSF]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Mapping MITRE ATT&CK Techniques
 

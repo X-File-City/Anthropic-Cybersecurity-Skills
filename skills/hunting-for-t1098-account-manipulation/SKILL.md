@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, mitre-attack, t1098, account-manipulation, active-directory, persistence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Hunting for T1098 Account Manipulation
 

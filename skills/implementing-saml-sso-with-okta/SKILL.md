@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, authentication, saml, sso, okta]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing SAML SSO with Okta
 

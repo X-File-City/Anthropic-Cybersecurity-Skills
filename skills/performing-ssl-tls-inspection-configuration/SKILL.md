@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [ssl-inspection, tls-decryption, https-inspection, certificate-management, proxy, man-in-the-middle, network-security, forward-proxy]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing SSL/TLS Inspection Configuration

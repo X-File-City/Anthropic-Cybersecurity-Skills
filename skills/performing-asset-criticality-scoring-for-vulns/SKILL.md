@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [asset-criticality, vulnerability-prioritization, risk-management, cmdb, business-impact, crown-jewels, asset-classification]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Asset Criticality Scoring for Vulns
 

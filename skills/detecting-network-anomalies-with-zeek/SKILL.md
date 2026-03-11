@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, zeek, network-monitoring, anomaly-detection, threat-hunting]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Detecting Network Anomalies with Zeek
 

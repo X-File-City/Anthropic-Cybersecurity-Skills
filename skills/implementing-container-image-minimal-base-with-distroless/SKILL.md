@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [distroless, container-images, minimal-base, attack-surface, docker, security-hardening, supply-chain, kubernetes]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Container Image Minimal Base with Distroless

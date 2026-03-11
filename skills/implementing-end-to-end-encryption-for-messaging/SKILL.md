@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, encryption, e2e, messaging, signal-protocol]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing End-to-End Encryption for Messaging
 

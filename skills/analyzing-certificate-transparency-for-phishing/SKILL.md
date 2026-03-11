@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [certificate-transparency, ct-logs, phishing, crt-sh, certstream, ssl, domain-monitoring, threat-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Certificate Transparency for Phishing
 

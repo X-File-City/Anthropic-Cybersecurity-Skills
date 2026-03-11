@@ -1,151 +1,112 @@
 #!/usr/bin/env python3
-"""Pass-the-Hash Detection Agent - Detects PTH via NTLM Event 4624 LogonType=3 analysis."""
+"""Pass-the-Hash attack detection agent.
 
-import json
-import logging
+Detects NTLM hash reuse attacks by analyzing Windows Security Event ID 4624
+for Type 3 NTLM logons with anomalous patterns across multiple targets.
+"""
+
 import argparse
+import json
+import re
+import sys
 from collections import defaultdict
 from datetime import datetime
 
-from Evtx.Evtx import FileHeader
-from lxml import etree
+try:
+    import Evtx.Evtx as evtx
+except ImportError:
+    evtx = None
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-logger = logging.getLogger(__name__)
-
-NS = {"evt": "http://schemas.microsoft.com/win/2004/08/events/event"}
+LEGITIMATE_SOURCES = {"127.0.0.1", "::1", "-", ""}
 
 
-def parse_ntlm_logons(evtx_path):
-    """Parse Event 4624 NTLM network logons from Security EVTX."""
-    ntlm_logons = []
-    with open(evtx_path, "rb") as f:
-        fh = FileHeader(f)
-        for record in fh.records():
-            try:
-                xml = record.xml()
-                root = etree.fromstring(xml.encode("utf-8"))
-                eid = root.find(".//evt:System/evt:EventID", NS)
-                if eid is None or eid.text != "4624":
-                    continue
-                data = {}
-                for elem in root.findall(".//evt:EventData/evt:Data", NS):
-                    data[elem.get("Name", "")] = elem.text or ""
-                if data.get("LogonType") == "3" and data.get("AuthenticationPackageName") == "NTLM":
-                    time_elem = root.find(".//evt:System/evt:TimeCreated", NS)
-                    ntlm_logons.append({
-                        "timestamp": time_elem.get("SystemTime", "") if time_elem is not None else "",
-                        "account": data.get("TargetUserName", ""),
-                        "domain": data.get("TargetDomainName", ""),
-                        "source_ip": data.get("IpAddress", ""),
-                        "workstation": data.get("WorkstationName", ""),
-                        "logon_process": data.get("LogonProcessName", ""),
-                        "lm_package": data.get("LmPackageName", ""),
-                        "key_length": data.get("KeyLength", ""),
-                    })
-            except Exception:
+def parse_logon_events(filepath):
+    if evtx is None:
+        return {"error": "python-evtx not installed: pip install python-evtx"}
+    events = []
+    with evtx.Evtx(filepath) as log:
+        for record in log.records():
+            xml = record.xml()
+            if "<EventID>4624</EventID>" not in xml:
                 continue
-    logger.info("Parsed %d NTLM network logon events", len(ntlm_logons))
-    return ntlm_logons
+            logon_type = re.search(r'<Data Name="LogonType">(\d+)', xml)
+            auth_pkg = re.search(r'<Data Name="AuthenticationPackageName">([^<]+)', xml)
+            account = re.search(r'<Data Name="TargetUserName">([^<]+)', xml)
+            domain = re.search(r'<Data Name="TargetDomainName">([^<]+)', xml)
+            src_ip = re.search(r'<Data Name="IpAddress">([^<]+)', xml)
+            computer = re.search(r'<Data Name="Computer">([^<]+)', xml)
+            time_match = re.search(r'SystemTime="([^"]+)"', xml)
+            lt = logon_type.group(1) if logon_type else ""
+            ap = auth_pkg.group(1) if auth_pkg else ""
+            if lt == "3" and "NTLM" in ap.upper():
+                events.append({
+                    "timestamp": time_match.group(1) if time_match else "",
+                    "logon_type": int(lt), "auth_package": ap.strip(),
+                    "account": account.group(1) if account else "",
+                    "domain": domain.group(1) if domain else "",
+                    "source_ip": src_ip.group(1) if src_ip else "",
+                    "computer": computer.group(1) if computer else "",
+                })
+    return events
 
 
-def detect_pth_indicators(ntlm_logons):
-    """Detect Pass-the-Hash indicators in NTLM logon events."""
-    pth_candidates = []
-    for logon in ntlm_logons:
-        indicators = []
-        if logon["logon_process"].strip() == "NtLmSsp":
-            indicators.append("NtLmSsp logon process")
-        if logon["lm_package"].strip() == "NTLM V1":
-            indicators.append("NTLMv1 (weaker, often PTH)")
-        if logon["key_length"] == "0":
-            indicators.append("Zero key length (PTH indicator)")
-        if logon["workstation"] and logon["source_ip"]:
-            indicators.append("Remote NTLM with workstation name")
-        if indicators:
-            logon["pth_indicators"] = indicators
-            logon["confidence"] = min(len(indicators) * 25, 100)
-            pth_candidates.append(logon)
-    logger.info("Found %d PTH candidate events", len(pth_candidates))
-    return pth_candidates
+def detect_pth_patterns(events, target_threshold=3):
+    if isinstance(events, dict) and "error" in events:
+        return [events]
+    findings = []
+    src_targets = defaultdict(lambda: {"computers": set(), "count": 0,
+                                        "source_ip": "", "account": ""})
+    for evt in events:
+        src = evt.get("source_ip", "")
+        if src in LEGITIMATE_SOURCES:
+            continue
+        key = f"{src}|{evt.get('account', '')}"
+        src_targets[key]["computers"].add(evt.get("computer", ""))
+        src_targets[key]["count"] += 1
+        src_targets[key]["source_ip"] = src
+        src_targets[key]["account"] = evt.get("account", "")
 
-
-def detect_lateral_movement_chains(ntlm_logons):
-    """Detect chains of NTLM logons from the same account across multiple hosts."""
-    account_hosts = defaultdict(set)
-    account_events = defaultdict(list)
-    for logon in ntlm_logons:
-        account = f"{logon['domain']}\\{logon['account']}"
-        if not logon["account"].endswith("$"):
-            account_hosts[account].add(logon["source_ip"])
-            account_events[account].append(logon)
-    chains = []
-    for account, hosts in account_hosts.items():
-        if len(hosts) >= 3:
-            chains.append({
-                "account": account,
-                "unique_source_ips": len(hosts),
-                "total_logons": len(account_events[account]),
-                "source_ips": list(hosts),
-                "indicator": "Multi-host NTLM lateral movement",
-                "severity": "critical" if len(hosts) >= 5 else "high",
+    for key, data in src_targets.items():
+        target_count = len(data["computers"])
+        if target_count >= target_threshold:
+            findings.append({
+                "type": "ntlm_type3_multi_target",
+                "source_ip": data["source_ip"],
+                "account": data["account"],
+                "target_count": target_count,
+                "targets": list(data["computers"])[:20],
+                "total_logons": data["count"],
+                "severity": "CRITICAL" if target_count >= 10 else "HIGH",
+                "mitre": "T1550.002",
             })
-    logger.info("Found %d lateral movement chains", len(chains))
-    return chains
 
-
-def detect_workstation_mismatch(ntlm_logons):
-    """Detect mismatches between source workstation and expected host."""
-    account_workstations = defaultdict(set)
-    for logon in ntlm_logons:
-        if logon["account"] and not logon["account"].endswith("$"):
-            key = f"{logon['domain']}\\{logon['account']}"
-            account_workstations[key].add(logon["workstation"])
-    mismatches = []
-    for account, workstations in account_workstations.items():
-        if len(workstations) >= 3:
-            mismatches.append({
-                "account": account,
-                "unique_workstations": len(workstations),
-                "workstations": list(workstations),
-                "indicator": "Account used from multiple workstations (PTH spread)",
+    admin_sources = defaultdict(int)
+    for evt in events:
+        if evt.get("account", "").lower() in ("administrator", "admin"):
+            admin_sources[evt.get("source_ip", "")] += 1
+    for src, count in admin_sources.items():
+        if count >= 2 and src not in LEGITIMATE_SOURCES:
+            findings.append({
+                "type": "admin_ntlm", "source_ip": src,
+                "logon_count": count, "severity": "HIGH", "mitre": "T1550.002",
             })
-    return mismatches
-
-
-def generate_report(ntlm_logons, pth_candidates, chains, mismatches):
-    """Generate Pass-the-Hash detection report."""
-    report = {
-        "timestamp": datetime.utcnow().isoformat(),
-        "total_ntlm_logons": len(ntlm_logons),
-        "pth_candidates": len(pth_candidates),
-        "lateral_movement_chains": len(chains),
-        "workstation_mismatches": len(mismatches),
-        "high_confidence_pth": [p for p in pth_candidates if p.get("confidence", 0) >= 75],
-        "chain_details": chains,
-        "mismatch_details": mismatches,
-        "sample_pth_events": pth_candidates[:20],
-    }
-    total = len(pth_candidates) + len(chains)
-    print(f"PTH DETECTION: {len(pth_candidates)} candidates, {len(chains)} lateral chains")
-    return report
+    return findings
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Pass-the-Hash Detection Agent")
-    parser.add_argument("--evtx-file", required=True, help="Path to Security EVTX file")
-    parser.add_argument("--output", default="pth_report.json")
+    parser = argparse.ArgumentParser(description="Pass-the-Hash Detector")
+    parser.add_argument("--security-log", required=True, help="Windows Security EVTX")
+    parser.add_argument("--target-threshold", type=int, default=3)
     args = parser.parse_args()
-
-    ntlm_logons = parse_ntlm_logons(args.evtx_file)
-    pth_candidates = detect_pth_indicators(ntlm_logons)
-    chains = detect_lateral_movement_chains(ntlm_logons)
-    mismatches = detect_workstation_mismatch(ntlm_logons)
-
-    report = generate_report(ntlm_logons, pth_candidates, chains, mismatches)
-    with open(args.output, "w") as f:
-        json.dump(report, f, indent=2)
-    logger.info("Report saved to %s", args.output)
+    events = parse_logon_events(args.security_log)
+    findings = detect_pth_patterns(events, args.target_threshold)
+    ntlm_count = len(events) if isinstance(events, list) else 0
+    results = {
+        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "total_ntlm_type3_logons": ntlm_count,
+        "findings": findings, "total_findings": len(findings),
+    }
+    print(json.dumps(results, indent=2))
 
 
 if __name__ == "__main__":

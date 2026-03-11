@@ -13,7 +13,7 @@ subdomain: penetration-testing
 tags: [mobile-pentest, OWASP-MASTG, Android-security, iOS-security, mobile-application-security]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Conducting Mobile App Penetration Test
 

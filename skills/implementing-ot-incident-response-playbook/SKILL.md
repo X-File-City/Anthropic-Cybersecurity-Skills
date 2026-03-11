@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, incident-response, playbook, sans, iec62443, nist, safety-critical]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing OT Incident Response Playbook

@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, dns-tunneling, zeek, data-exfiltration, covert-channel, mitre-t1071-004, network-monitoring]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting for DNS Tunneling with Zeek

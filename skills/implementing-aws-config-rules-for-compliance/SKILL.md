@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, config-rules, compliance, automation, remediation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing AWS Config Rules for Compliance

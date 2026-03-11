@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [rapid7, insightvm, vulnerability-scanning, nexpose, scan-engine, asset-discovery, authenticated-scanning]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Rapid7 InsightVM for Scanning
 

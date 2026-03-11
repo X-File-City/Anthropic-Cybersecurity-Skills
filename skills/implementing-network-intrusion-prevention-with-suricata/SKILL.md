@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [suricata, ips, ids, intrusion-prevention, network-security, emerging-threats, rule-management, nfqueue, inline-mode]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Network Intrusion Prevention with Suricata

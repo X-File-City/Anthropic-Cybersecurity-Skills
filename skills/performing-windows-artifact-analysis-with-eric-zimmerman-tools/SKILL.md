@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [eric-zimmerman, ez-tools, kape, mftecmd, pecmd, lecmd, jlecmd, registry-forensics, windows-forensics, timeline-explorer, dfir, artifact-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Windows Artifact Analysis with Eric Zimmerman Tools

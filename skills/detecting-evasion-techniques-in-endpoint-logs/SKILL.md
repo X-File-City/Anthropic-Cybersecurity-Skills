@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, edr, threat-hunting, defense-evasion, MITRE-ATT&CK, detection-engineering]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Detecting Evasion Techniques in Endpoint Logs
 

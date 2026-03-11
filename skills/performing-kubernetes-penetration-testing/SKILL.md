@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [containers, kubernetes, security, penetration-testing, offensive-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Kubernetes Penetration Testing
 

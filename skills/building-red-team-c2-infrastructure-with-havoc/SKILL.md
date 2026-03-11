@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [havoc-c2, command-and-control, red-team-infrastructure, post-exploitation, adversary-emulation, demon-agent]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Red Team C2 Infrastructure with Havoc

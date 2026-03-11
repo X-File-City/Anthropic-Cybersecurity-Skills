@@ -12,7 +12,7 @@ subdomain: penetration-testing
 tags: [XSS, cross-site-scripting, client-side-security, OWASP-A03, JavaScript-injection]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Testing for XSS Vulnerabilities
 

@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [ssvc, vulnerability-triage, cisa, vulnerability-prioritization, decision-tree, cvss, remediation, risk-management]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Triaging Vulnerabilities with SSVC Framework

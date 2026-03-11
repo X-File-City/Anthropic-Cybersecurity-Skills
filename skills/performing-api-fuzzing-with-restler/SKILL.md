@@ -13,7 +13,7 @@ subdomain: api-security
 tags: [api-security, fuzzing, restler, automated-testing, openapi, stateful-testing]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing API Fuzzing with RESTler
 

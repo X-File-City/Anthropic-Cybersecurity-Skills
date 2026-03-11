@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [api-security, shadow-apis, api-discovery, undocumented-apis, zombie-apis, api-inventory, attack-surface-management, api-governance]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Shadow API Endpoints

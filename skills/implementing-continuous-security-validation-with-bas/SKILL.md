@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [breach-attack-simulation, bas, security-validation, safebreach, attackiq, picus, cymulate, mitre-attack]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Continuous Security Validation with BAS
 

@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [attack-pattern, cti-reports, mitre-attack, stix, detection-engineering, threat-intelligence, nlp, extraction]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Attack Pattern Library from CTI Reports
 

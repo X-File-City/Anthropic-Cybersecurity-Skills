@@ -6,7 +6,7 @@ subdomain: malware-analysis
 tags: [yara, malware-detection, signature-development, threat-hunting, pattern-matching, yara-x, indicator-development]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing YARA Rule Development for Detection
 

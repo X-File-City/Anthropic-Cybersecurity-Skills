@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, packet-injection, scapy, hping3, protocol-testing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Packet Injection Attack
 

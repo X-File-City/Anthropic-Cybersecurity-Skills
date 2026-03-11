@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [browser-forensics, hindsight, chrome-forensics, chromium, edge, browsing-history, cookies, downloads, cache, web-artifacts]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Browser Forensics with Hindsight

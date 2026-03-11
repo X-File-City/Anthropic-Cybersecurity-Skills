@@ -6,7 +6,7 @@ subdomain: penetration-testing
 tags: [cloud-pentest, AWS, Azure, GCP, Pacu, ScoutSuite, Prowler, IAM, S3, cloud-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Cloud Infrastructure Penetration Test

@@ -11,7 +11,7 @@ subdomain: identity-access-management
 tags: [SailPoint, IdentityIQ, access-review, entitlement-certification, IGA, access-governance]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Entitlement Review with SailPoint IdentityIQ

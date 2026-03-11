@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [email-forensics, pst, ost, outlook, mapi, email-headers, attachments, deleted-emails, libpff, eml-extraction]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Outlook PST for Email Forensics

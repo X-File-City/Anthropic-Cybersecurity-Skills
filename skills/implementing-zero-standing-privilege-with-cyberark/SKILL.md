@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [cyberark, zero-standing-privilege, jit-access, pam, cloud-security, least-privilege]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Zero Standing Privilege with CyberArk

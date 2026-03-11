@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [disk-forensics, forensic-imaging, evidence-acquisition, file-recovery, chain-of-custody]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Disk Forensics Investigation

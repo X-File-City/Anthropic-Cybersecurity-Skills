@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [social-engineering, vishing, pretext-call, security-awareness, red-team, phishing, human-risk]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Social Engineering Pretext Call

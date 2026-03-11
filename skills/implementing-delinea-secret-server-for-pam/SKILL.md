@@ -11,7 +11,7 @@ subdomain: identity-access-management
 tags: [PAM, Delinea, Secret-Server, privileged-access, password-vault, credential-management]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Delinea Secret Server for PAM

@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, ransomware, incident-response, playbook, nist, mitre-attack, containment]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building SOC Playbook for Ransomware
 

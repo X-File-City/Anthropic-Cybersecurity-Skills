@@ -6,7 +6,7 @@ subdomain: incident-response
 tags: [incident-response, dfir, forensics, volatile-evidence, memory-forensics, chain-of-custody]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Collecting Volatile Evidence from Compromised Hosts

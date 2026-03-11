@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, tls, ssl, transport-security, network-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring TLS 1.3 for Secure Communications
 

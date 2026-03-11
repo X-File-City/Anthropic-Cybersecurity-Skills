@@ -6,7 +6,7 @@ subdomain: soc-operations
 tags: [mitre-attack, detection-coverage, gap-analysis, attack-navigator, soc, detection-engineering]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing MITRE ATT&CK Coverage Mapping

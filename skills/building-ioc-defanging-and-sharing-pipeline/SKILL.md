@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [ioc, defanging, threat-sharing, stix, pipeline, indicator, automation, threat-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building IOC Defanging and Sharing Pipeline
 

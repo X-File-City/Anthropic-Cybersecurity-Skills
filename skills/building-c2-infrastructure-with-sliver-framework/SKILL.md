@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, c2-framework, sliver, command-and-control, adversary-simulation, infrastructure, post-exploitation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building C2 Infrastructure with Sliver Framework
 

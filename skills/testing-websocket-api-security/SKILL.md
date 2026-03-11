@@ -13,7 +13,7 @@ subdomain: api-security
 tags: [api-security, websocket, cswsh, real-time, injection, authentication]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Testing WebSocket API Security
 

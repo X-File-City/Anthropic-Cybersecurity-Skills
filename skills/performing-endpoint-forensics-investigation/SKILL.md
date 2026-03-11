@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, forensics, memory-analysis, disk-imaging, incident-investigation, Volatility]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Endpoint Forensics Investigation
 

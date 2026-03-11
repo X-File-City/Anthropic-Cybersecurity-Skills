@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [threat-intelligence, cti, ioc, mitre-attack, stix, attribution, campaign-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Analyzing Campaign Attribution Evidence
 

@@ -6,7 +6,7 @@ subdomain: malware-analysis
 tags: [agent-tesla, rat, config-extraction, dotnet, malware-analysis, keylogger, credential-theft]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Extracting Config from Agent Tesla RAT
 

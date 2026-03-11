@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [misp, threat-feed, aggregation, indicator, sharing, correlation, siem-integration, threat-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Threat Feed Aggregation with MISP
 

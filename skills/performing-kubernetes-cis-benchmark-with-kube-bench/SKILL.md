@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [kube-bench, cis-benchmark, kubernetes, compliance, hardening, aquasecurity]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Kubernetes CIS Benchmark with kube-bench

@@ -9,7 +9,7 @@ subdomain: soc-operations
 tags: [soc, lateral-movement, mitre-attack, pass-the-hash, psexec, wmi, rdp, smb, detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Lateral Movement Detection
 

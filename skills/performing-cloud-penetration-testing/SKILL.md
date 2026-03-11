@@ -13,7 +13,7 @@ subdomain: penetration-testing
 tags: [cloud-pentest, AWS-security, Azure-security, IAM-exploitation, cloud-infrastructure]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Cloud Penetration Testing
 

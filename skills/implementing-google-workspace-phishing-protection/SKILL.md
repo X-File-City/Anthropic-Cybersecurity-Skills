@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [google-workspace, gmail, phishing, email-security, safe-browsing, anti-spoofing, admin-console]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Google Workspace Phishing Protection
 

@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [MITRE-ATT&CK, threat-actor, APT, CrowdStrike, Mandiant, attribution, kill-chain, NIST-CSF]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Profiling Threat Actor Groups
 

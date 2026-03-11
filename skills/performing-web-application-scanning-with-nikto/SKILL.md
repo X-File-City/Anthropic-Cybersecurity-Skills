@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [vulnerability-management, cve, nikto, web-scanning, owasp, risk]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Web Application Scanning with Nikto
 

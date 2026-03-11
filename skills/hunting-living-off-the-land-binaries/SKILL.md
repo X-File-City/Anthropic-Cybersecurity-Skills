@@ -10,7 +10,7 @@ subdomain: security-operations
 tags: [hunting, living, off, the]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting Living Off The Land Binaries

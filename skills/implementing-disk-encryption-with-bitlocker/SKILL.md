@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, encryption, BitLocker, TPM, data-protection, windows-security]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Disk Encryption with BitLocker
 

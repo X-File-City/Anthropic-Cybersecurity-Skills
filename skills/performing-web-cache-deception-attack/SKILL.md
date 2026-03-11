@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [web-cache-deception, cdn-attack, cache-poisoning, path-normalization, cloudflare, cache-key, static-resource]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Web Cache Deception Attack

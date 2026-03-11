@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, wmi-persistence, mitre-t1546-003, event-subscription, windows, endpoint-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting for Persistence via WMI Subscriptions

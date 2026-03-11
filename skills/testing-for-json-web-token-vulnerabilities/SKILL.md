@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [jwt, json-web-token, algorithm-confusion, authentication-bypass, token-forgery, kid-injection, jku-attack]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing for JSON Web Token Vulnerabilities

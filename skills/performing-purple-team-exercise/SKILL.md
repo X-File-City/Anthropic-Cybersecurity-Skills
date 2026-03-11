@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, purple-team, red-team, blue-team, mitre-attack, adversary-emulation, detection-validation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Purple Team Exercise
 

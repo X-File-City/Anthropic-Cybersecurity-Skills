@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [phishing-response, email-security, credential-compromise, email-header-analysis, mailbox-remediation]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Phishing Incident Response

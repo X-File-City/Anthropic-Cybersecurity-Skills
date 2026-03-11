@@ -12,7 +12,7 @@ subdomain: threat-intelligence
 tags: [campaign-analysis, correlation, MISP, ATT&CK, threat-actor, intrusion-set, clustering, CTI]
 version: 1.0.0
 author: team-cybersecurity
-license: MIT
+license: Apache-2.0
 ---
 # Correlating Threat Campaigns
 

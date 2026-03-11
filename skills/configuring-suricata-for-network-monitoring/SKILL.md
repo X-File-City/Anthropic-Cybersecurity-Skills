@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, suricata, ids, ips, network-monitoring]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring Suricata for Network Monitoring
 

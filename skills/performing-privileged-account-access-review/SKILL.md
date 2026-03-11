@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [pam, access-review, privileged-accounts, least-privilege, compliance, audit, identity-governance]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Privileged Account Access Review

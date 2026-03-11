@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [cisco-ise, 802.1x, nac, radius, network-access-control, posture-assessment, mab, dynamic-vlan, eap-tls]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Network Access Control with Cisco ISE

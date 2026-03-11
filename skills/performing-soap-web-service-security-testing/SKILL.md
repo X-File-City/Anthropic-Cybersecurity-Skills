@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [soap, web-services, wsdl, xml-injection, xxe, ws-security, penetration-testing, soapaction-spoofing, xpath-injection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing SOAP Web Service Security Testing

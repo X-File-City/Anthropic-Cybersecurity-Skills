@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, arp-spoofing, mitm, ettercap, layer2-attack]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing ARP Spoofing Attack Simulation
 

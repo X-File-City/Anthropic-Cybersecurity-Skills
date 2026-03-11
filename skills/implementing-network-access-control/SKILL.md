@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, nac, 802.1x, radius, packetfence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Network Access Control
 

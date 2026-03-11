@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, authentication, fido2, webauthn, passwordless]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Passwordless Authentication with FIDO2
 

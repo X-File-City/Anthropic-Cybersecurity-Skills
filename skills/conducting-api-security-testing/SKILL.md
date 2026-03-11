@@ -12,7 +12,7 @@ subdomain: penetration-testing
 tags: [API-security, OWASP-API-Top10, REST, GraphQL, authorization-testing]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Conducting API Security Testing
 

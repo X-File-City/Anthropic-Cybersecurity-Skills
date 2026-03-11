@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, autopsy, disk-analysis, sleuth-kit, file-recovery, artifact-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Disk Image with Autopsy

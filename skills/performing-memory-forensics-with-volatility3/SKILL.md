@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, memory-forensics, volatility, ram-analysis, malware-detection, incident-response]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Memory Forensics with Volatility 3

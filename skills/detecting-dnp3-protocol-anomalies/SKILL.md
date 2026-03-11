@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, dnp3, scada, anomaly-detection, protocol-analysis, energy-sector, ids]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting DNP3 Protocol Anomalies

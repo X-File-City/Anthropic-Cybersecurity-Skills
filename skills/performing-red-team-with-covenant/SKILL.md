@@ -6,7 +6,7 @@ subdomain: red-team
 tags: [red-team, c2, covenant, adversary-simulation, penetration-testing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Red Team Operations with Covenant C2
 

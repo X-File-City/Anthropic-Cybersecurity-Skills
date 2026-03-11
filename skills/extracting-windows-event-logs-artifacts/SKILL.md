@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, windows-event-logs, evtx, chainsaw, hayabusa, sigma-rules, incident-response]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Extracting Windows Event Logs Artifacts

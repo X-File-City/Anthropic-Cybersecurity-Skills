@@ -12,7 +12,7 @@ subdomain: api-security
 tags: [api-security, api-gateway, kong, aws-api-gateway, rate-limiting, waf]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing API Gateway Security Controls
 

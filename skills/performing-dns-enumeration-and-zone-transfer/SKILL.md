@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, dns, enumeration, zone-transfer, reconnaissance]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing DNS Enumeration and Zone Transfer
 

@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, lateral-movement, threat-detection, siem, pass-the-hash]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Detecting Lateral Movement in Network
 

@@ -6,7 +6,7 @@ subdomain: soc-operations
 tags: [splunk, threat-intelligence, enrichment, ioc, lookup, siem, soc, enterprise-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Threat Intelligence Enrichment in Splunk

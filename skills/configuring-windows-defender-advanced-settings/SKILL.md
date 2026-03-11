@@ -12,7 +12,7 @@ subdomain: endpoint-security
 tags: [endpoint, windows-security, Microsoft-Defender, ASR, exploit-protection, MDE]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring Windows Defender Advanced Settings
 

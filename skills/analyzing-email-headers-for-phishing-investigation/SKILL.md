@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, email-analysis, phishing, spf, dkim, dmarc, header-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Email Headers for Phishing Investigation

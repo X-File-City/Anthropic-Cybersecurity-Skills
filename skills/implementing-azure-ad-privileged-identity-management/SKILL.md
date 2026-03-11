@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [azure-ad, pim, entra-id, just-in-time, privileged-roles, identity-governance, zero-trust]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Azure AD Privileged Identity Management

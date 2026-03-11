@@ -11,7 +11,7 @@ subdomain: identity-access-management
 tags: [OAuth, scope-minimization, API-security, consent-review, third-party-risk, token-audit]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing OAuth Scope Minimization Review

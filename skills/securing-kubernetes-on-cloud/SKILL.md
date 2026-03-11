@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [kubernetes-security, eks, aks, gke, pod-security-standards, container-runtime]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Securing Kubernetes on Cloud

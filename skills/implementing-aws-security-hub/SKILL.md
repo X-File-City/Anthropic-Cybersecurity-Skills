@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [aws-security-hub, cspm, compliance-automation, security-standards, finding-aggregation]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing AWS Security Hub

@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, azure, entra-id, active-directory, iam-audit, conditional-access]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Auditing Azure Active Directory Configuration

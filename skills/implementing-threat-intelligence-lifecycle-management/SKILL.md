@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [threat-intelligence, lifecycle, intelligence-cycle, collection, analysis, dissemination, strategic-intelligence, cti-program]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Threat Intelligence Lifecycle Management
 

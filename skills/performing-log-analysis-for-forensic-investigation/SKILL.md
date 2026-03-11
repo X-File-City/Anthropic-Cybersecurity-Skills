@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, log-analysis, siem, event-correlation, timeline-analysis, evidence-collection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Log Analysis for Forensic Investigation

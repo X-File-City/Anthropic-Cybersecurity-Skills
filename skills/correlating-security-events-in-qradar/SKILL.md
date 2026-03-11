@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, qradar, siem, aql, correlation, offense-management, ibm]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Correlating Security Events in QRadar
 

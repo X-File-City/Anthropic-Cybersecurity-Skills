@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, terraform, infrastructure-as-code, checkov, tfsec, policy-as-code]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Auditing Terraform Infrastructure for Security

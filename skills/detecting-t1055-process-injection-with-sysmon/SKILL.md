@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, process-injection, sysmon, mitre-t1055, defense-evasion, dll-injection, process-hollowing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting T1055 Process Injection with Sysmon

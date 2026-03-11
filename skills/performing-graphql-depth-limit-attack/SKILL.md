@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [graphql, depth-limit, denial-of-service, nested-queries, api-security, query-complexity, resource-exhaustion, penetration-testing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing GraphQL Depth Limit Attack

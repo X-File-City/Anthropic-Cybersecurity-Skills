@@ -11,7 +11,7 @@ subdomain: mobile-security
 author: mahipal
 tags: [mobile-security, android, ios, burp-suite, traffic-interception, penetration-testing]
 version: 1.0.0
-license: MIT
+license: Apache-2.0
 ---
 # Intercepting Mobile Traffic with Burp Suite
 

@@ -13,7 +13,7 @@ subdomain: api-security
 tags: [api-security, owasp, rate-limiting, throttling, brute-force, dos-prevention]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing API Rate Limiting Bypass
 

@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [lnk-files, jump-lists, lecmd, jlecmd, windows-forensics, shell-link, user-activity, file-access, program-execution, recent-files]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing LNK File and Jump List Artifacts

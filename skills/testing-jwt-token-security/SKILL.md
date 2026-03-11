@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, jwt, authentication, web-security, token-security, burpsuite]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing JWT Token Security

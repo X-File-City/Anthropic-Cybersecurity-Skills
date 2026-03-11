@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, nmap, port-scanning, service-enumeration, reconnaissance]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Scanning Network with Nmap Advanced Techniques
 

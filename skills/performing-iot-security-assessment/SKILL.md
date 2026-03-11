@@ -12,7 +12,7 @@ subdomain: penetration-testing
 tags: [IoT-security, firmware-analysis, embedded-systems, hardware-hacking, UART-JTAG]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing IoT Security Assessment
 

@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, browser-forensics, chrome, firefox, edge, web-history, artifact-extraction]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Extracting Browser History Artifacts

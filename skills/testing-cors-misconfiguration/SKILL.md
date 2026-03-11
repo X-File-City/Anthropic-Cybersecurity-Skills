@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, cors, web-security, owasp, same-origin-policy, burpsuite]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing CORS Misconfiguration

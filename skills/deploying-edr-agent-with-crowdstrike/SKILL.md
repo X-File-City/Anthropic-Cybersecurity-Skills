@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, edr, CrowdStrike, Falcon, threat-detection, sensor-deployment]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Deploying EDR Agent with CrowdStrike
 

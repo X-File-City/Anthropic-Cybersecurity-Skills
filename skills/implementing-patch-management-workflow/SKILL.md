@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [vulnerability-management, patch-management, wsus, sccm, ansible, risk]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Patch Management Workflow
 

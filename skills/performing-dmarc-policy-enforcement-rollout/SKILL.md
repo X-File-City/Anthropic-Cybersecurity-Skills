@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [dmarc, spf, dkim, email-authentication, anti-spoofing, phishing, dns, email-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing DMARC Policy Enforcement Rollout
 

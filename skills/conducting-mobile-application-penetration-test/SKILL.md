@@ -6,7 +6,7 @@ subdomain: penetration-testing
 tags: [mobile-pentest, Android, iOS, Frida, Objection, MobSF, OWASP-MASTG, certificate-pinning, APK-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Mobile Application Penetration Test

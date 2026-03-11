@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [splunk, SPL, SIEM, log-analysis, security-monitoring]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Security Logs with Splunk

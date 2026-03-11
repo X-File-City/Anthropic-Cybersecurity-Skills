@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [xm-cyber, attack-path-analysis, exposure-management, ctem, choke-points, breach-simulation, attack-surface]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Attack Path Analysis with XM Cyber
 

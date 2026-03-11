@@ -10,7 +10,7 @@ subdomain: cloud-security
 tags: [aws-iam, least-privilege, permission-boundaries, access-analyzer, cloud-identity]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Securing AWS IAM Permissions

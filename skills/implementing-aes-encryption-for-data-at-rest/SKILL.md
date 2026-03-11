@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, encryption, aes, data-at-rest, symmetric-encryption]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing AES Encryption for Data at Rest
 

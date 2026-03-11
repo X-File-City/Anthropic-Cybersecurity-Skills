@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, ioc, enrichment, automation, virustotal, abuseipdb, shodan, threat-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing IOC Enrichment Automation
 

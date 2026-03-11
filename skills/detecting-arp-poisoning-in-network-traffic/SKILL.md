@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [arp-poisoning, arp-spoofing, mitm, dynamic-arp-inspection, arpwatch, network-security, man-in-the-middle, layer-2-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting ARP Poisoning in Network Traffic

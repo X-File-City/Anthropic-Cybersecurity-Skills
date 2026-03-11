@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, AppLocker, application-whitelisting, windows-security, software-restriction]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Application Whitelisting with AppLocker
 

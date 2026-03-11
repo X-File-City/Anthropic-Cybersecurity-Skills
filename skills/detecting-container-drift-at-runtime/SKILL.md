@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [container-drift, runtime-security, immutable-containers, falco, kubernetes, container-security, drift-detection, microsoft-defender]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Container Drift at Runtime

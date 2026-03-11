@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [memory-forensics, volatility, RAM-analysis, process-injection, DFIR]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Conducting Memory Forensics with Volatility

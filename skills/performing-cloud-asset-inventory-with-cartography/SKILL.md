@@ -6,7 +6,7 @@ subdomain: cloud-security
 tags: [cartography, neo4j, cloud-security, asset-inventory, attack-path, graph-database, cncf, lyft]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Cloud Asset Inventory with Cartography

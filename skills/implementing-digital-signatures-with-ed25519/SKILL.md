@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, digital-signatures, ed25519, authentication, integrity]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Digital Signatures with Ed25519
 

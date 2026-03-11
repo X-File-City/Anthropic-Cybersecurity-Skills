@@ -9,7 +9,7 @@ subdomain: zero-trust-architecture
 tags: [zero-trust, saas-security, casb, sspm, conditional-access, oauth-governance, session-controls]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Zero Trust for SaaS Applications

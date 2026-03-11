@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, uac-bypass, privilege-escalation, mitre-t1548, elevation-control, windows-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting T1548 Abuse Elevation Control Mechanism

@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, directory-traversal, path-traversal, lfi, owasp, web-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Directory Traversal Testing

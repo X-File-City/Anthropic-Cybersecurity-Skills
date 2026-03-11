@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [api-security, rate-limiting, token-bucket, sliding-window, ddos-protection, brute-force-prevention, api-abuse, api-gateway]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing API Abuse Detection with Rate Limiting

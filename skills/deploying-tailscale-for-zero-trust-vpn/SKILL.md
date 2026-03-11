@@ -6,7 +6,7 @@ subdomain: zero-trust-architecture
 tags: [zero-trust, tailscale, wireguard, mesh-vpn, ztna, peer-to-peer, acl, identity-aware, headscale]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Deploying Tailscale for Zero Trust VPN

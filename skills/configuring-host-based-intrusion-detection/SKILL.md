@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, HIDS, Wazuh, OSSEC, file-integrity-monitoring, intrusion-detection]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring Host-Based Intrusion Detection
 

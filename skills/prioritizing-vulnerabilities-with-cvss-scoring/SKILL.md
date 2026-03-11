@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [vulnerability-management, cve, cvss, risk, prioritization, nist]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Prioritizing Vulnerabilities with CVSS Scoring
 

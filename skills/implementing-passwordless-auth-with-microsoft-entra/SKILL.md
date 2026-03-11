@@ -11,7 +11,7 @@ subdomain: identity-access-management
 tags: [passwordless, FIDO2, passkeys, Microsoft-Entra, Windows-Hello, phishing-resistant-MFA]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Passwordless Auth with Microsoft Entra

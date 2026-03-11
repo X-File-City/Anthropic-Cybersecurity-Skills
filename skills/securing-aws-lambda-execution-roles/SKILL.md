@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, lambda, iam, least-privilege, execution-roles]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Securing AWS Lambda Execution Roles

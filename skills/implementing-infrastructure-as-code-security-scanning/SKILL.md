@@ -11,7 +11,7 @@ subdomain: devsecops
 tags: [devsecops, cicd, iac-security, checkov, tfsec, terraform, secure-sdlc]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Infrastructure as Code Security Scanning

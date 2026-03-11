@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [network-forensics, PCAP-analysis, Wireshark, Zeek, traffic-analysis]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Network Traffic for Incidents

@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, pacu, penetration-testing, offensive-security, iam-exploitation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Cloud Penetration Testing with Pacu

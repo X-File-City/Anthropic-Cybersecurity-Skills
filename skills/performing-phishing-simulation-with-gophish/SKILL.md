@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [phishing, email-security, social-engineering, dmarc, awareness, gophish, simulation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Phishing Simulation with GoPhish
 

@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [infrastructure-tracking, passive-dns, c2, whois, threat-actor, pivoting, threat-intelligence, domain-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Adversary Infrastructure Tracking System
 

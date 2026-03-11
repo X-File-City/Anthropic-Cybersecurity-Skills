@@ -6,7 +6,7 @@ subdomain: incident-response
 tags: [timesketch, timeline-analysis, forensic-timeline, plaso, dfir, incident-investigation, collaborative-forensics]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Incident Timeline with Timesketch

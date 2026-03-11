@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [threat-intelligence, cti, ioc, mitre-attack, stix, misp, taxii, threat-sharing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Collecting Threat Intelligence with MISP
 

@@ -13,7 +13,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, scada, industrial-control, iec62443, intrusion-detection, threat-detection]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Attacks on SCADA Systems

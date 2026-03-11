@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, hash-cracking, password-security, hashcat, penetration-testing]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Hash Cracking with Hashcat
 

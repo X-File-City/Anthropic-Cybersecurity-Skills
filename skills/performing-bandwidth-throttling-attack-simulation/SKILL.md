@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, bandwidth-throttling, qos, traffic-shaping, network-resilience]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Bandwidth Throttling Attack Simulation
 

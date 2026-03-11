@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, serverless, lambda, azure-functions, cloud-functions, security-review]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Serverless Function Security Review

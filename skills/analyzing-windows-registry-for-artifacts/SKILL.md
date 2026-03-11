@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, windows-registry, artifact-analysis, regripper, registry-explorer, evidence-collection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Analyzing Windows Registry for Artifacts

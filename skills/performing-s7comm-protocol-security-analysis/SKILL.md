@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, s7comm, siemens, plc-security, protocol-analysis, scada, vulnerability-assessment]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing S7comm Protocol Security Analysis

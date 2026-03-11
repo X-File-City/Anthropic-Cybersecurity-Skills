@@ -12,7 +12,7 @@ subdomain: api-security
 tags: [api-security, owasp, api-discovery, shadow-api, inventory, attack-surface]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing API Inventory and Discovery
 

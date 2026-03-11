@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, data-exposure, pii, owasp, web-security, api-keys, secrets]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing for Sensitive Data Exposure

@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [second-order-sqli, stored-sql-injection, sql-injection, database-security, web-security, blind-injection, persistent-sqli]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Second-Order SQL Injection

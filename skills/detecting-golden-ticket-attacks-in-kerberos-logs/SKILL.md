@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, golden-ticket, kerberos, active-directory, mitre-t1558-001, credential-abuse]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Golden Ticket Attacks in Kerberos Logs

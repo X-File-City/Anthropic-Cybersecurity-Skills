@@ -6,7 +6,7 @@ subdomain: zero-trust-architecture
 tags: [zero-trust, aws, verified-access, ztna, cedar-policy, vpn-less, identity-verification, device-posture, aws-ram]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Configuring AWS Verified Access for ZTNA

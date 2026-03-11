@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, active-directory, dcsync, credential-theft, mitre-t1003-006, mimikatz, kerberos]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting DCSync Attack in Active Directory

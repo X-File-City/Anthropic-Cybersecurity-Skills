@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, deception, honeypot, honeytoken, canary, lateral-movement, detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Deception Technology Deployment
 

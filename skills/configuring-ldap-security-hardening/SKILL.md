@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, ldap, directory-services, hardening]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Configuring LDAP Security Hardening
 

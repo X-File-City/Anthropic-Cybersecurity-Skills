@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [cloud-waf, aws-waf, azure-waf, owasp-protection, rate-limiting]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Cloud WAF Rules

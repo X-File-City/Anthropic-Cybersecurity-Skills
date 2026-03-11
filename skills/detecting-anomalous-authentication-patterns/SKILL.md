@@ -11,7 +11,7 @@ subdomain: identity-access-management
 tags: [UEBA, authentication-anomaly, impossible-travel, brute-force, credential-stuffing, behavioral-analytics]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Anomalous Authentication Patterns

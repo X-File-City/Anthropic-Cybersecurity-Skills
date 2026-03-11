@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [containers, docker, security, hardening, CIS-benchmark]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Hardening Docker Containers for Production
 

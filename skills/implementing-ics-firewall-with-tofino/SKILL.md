@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, firewall, tofino, belden, deep-packet-inspection, network-security, scada]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing ICS Firewall with Tofino

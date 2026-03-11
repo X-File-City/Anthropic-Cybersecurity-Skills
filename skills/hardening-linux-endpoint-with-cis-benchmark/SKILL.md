@@ -11,7 +11,7 @@ subdomain: endpoint-security
 tags: [endpoint, hardening, linux-security, CIS-benchmark, Ubuntu, RHEL]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Hardening Linux Endpoint with CIS Benchmark
 

@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [threat-landscape, sector-analysis, risk-assessment, threat-intelligence, industry-targeting, cti, strategic-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Threat Landscape Assessment for Sector
 

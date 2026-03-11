@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [email-security, proofpoint, secure-email-gateway, phishing, anti-spam, anti-malware, bec, email-filtering]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Proofpoint Email Security Gateway
 

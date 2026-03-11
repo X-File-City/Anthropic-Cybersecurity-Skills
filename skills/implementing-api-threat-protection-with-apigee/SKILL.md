@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [apigee, api-gateway, threat-protection, json-threat-protection, xml-threat-protection, spike-arrest, oauth2, google-cloud, owasp-api-top-10]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing API Threat Protection with Apigee

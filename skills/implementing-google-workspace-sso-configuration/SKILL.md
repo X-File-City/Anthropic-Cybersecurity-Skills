@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [google-workspace, sso, saml, identity-provider, authentication, federation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Google Workspace SSO Configuration

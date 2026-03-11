@@ -12,7 +12,7 @@ subdomain: mobile-security
 author: mahipal
 tags: [mobile-security, android, ios, mam, enterprise-security, owasp-mobile]
 version: 1.0.0
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Mobile Application Management
 

@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [zero-trust, beyondcorp, identity-aware-proxy, micro-segmentation, continuous-verification]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Zero Trust in Cloud

@@ -11,7 +11,7 @@ subdomain: security-operations
 tags: [detecting, sql, injection, via]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 ## Instructions

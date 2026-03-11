@@ -13,7 +13,7 @@ subdomain: penetration-testing
 tags: [Active-Directory, BloodHound, Mimikatz, Kerberoasting, domain-compromise]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Executing Active Directory Attack Simulation
 

@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, metrics, kpi, mttd, mttr, dashboard, reporting, continuous-improvement]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building SOC Metrics and KPI Tracking
 

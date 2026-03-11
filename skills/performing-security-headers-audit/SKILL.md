@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, security-headers, csp, hsts, owasp, web-security, hardening]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Security Headers Audit

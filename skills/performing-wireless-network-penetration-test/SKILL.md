@@ -6,7 +6,7 @@ subdomain: penetration-testing
 tags: [wireless-pentest, WiFi, Aircrack-ng, WPA2, WPA3, rogue-AP, evil-twin, 802.11, Kismet]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Wireless Network Penetration Test

@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, mitm, bettercap, ettercap, mitmproxy]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Conducting Man-in-the-Middle Attack Simulation
 

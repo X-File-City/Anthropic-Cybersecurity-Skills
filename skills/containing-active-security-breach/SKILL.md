@@ -6,7 +6,7 @@ subdomain: incident-response
 tags: [incident-response, containment, breach-response, network-isolation, dfir]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Containing an Active Security Breach

@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [api-security, schema-validation, openapi, json-schema, input-validation, data-leakage-prevention, mass-assignment, api-gateway]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing API Schema Validation Security

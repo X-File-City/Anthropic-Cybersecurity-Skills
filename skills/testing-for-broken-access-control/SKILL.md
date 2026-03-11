@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, access-control, authorization, owasp, privilege-escalation, web-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing for Broken Access Control

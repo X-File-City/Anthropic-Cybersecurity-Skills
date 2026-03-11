@@ -13,7 +13,7 @@ subdomain: ransomware-defense
 tags: [ransomware, detection, honeypot, canary, defense, deception]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Honeypot for Ransomware Detection
 

@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [ransomware, encryption-recovery, backup-restoration, ransom-negotiation, CISA-guidance]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Ransomware Response

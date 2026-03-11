@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [IR-playbook, runbook, NIST-800-61, SOAR-integration, response-procedures]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Incident Response Playbooks

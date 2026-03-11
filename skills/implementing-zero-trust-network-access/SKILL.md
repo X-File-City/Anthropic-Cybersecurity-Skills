@@ -10,7 +10,7 @@ subdomain: cloud-security
 tags: [cloud-security, zero-trust, ztna, beyondcorp, identity-aware-proxy, micro-segmentation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Zero Trust Network Access

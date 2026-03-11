@@ -6,7 +6,7 @@ subdomain: api-security
 tags: [api-security, enumeration, bola, idor, broken-object-level-authorization, owasp-api-top-10, access-control, rate-limiting]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting API Enumeration Attacks

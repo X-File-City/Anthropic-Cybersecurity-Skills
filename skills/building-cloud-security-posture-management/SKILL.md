@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [cspm, cloud-misconfiguration, security-posture, drift-detection, multi-cloud-governance]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Cloud Security Posture Management

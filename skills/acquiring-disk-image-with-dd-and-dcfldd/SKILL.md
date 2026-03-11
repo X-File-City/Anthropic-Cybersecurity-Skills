@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, disk-imaging, evidence-acquisition, dd, dcfldd, hash-verification]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Acquiring Disk Image with dd and dcfldd

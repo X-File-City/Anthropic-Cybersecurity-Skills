@@ -6,7 +6,7 @@ subdomain: incident-response
 tags: [velociraptor, dfir, endpoint-collection, vql, forensic-artifacts, rapid7, threat-hunting, incident-response]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Velociraptor for IR Collection

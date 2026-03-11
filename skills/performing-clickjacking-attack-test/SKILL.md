@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [penetration-testing, clickjacking, ui-redressing, web-security, owasp, x-frame-options]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Clickjacking Attack Test

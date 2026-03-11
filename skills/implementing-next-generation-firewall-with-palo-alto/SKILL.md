@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [palo-alto, ngfw, firewall, app-id, user-id, threat-prevention, network-security, ssl-decryption, zone-protection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Next-Generation Firewall with Palo Alto

@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [sqlite, database-forensics, freelist, wal, write-ahead-log, browser-history, mobile-forensics, deleted-records, b-tree, unallocated-space]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing SQLite Database Forensics

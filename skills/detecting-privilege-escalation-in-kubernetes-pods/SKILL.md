@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [kubernetes, privilege-escalation, security-context, capabilities, detection, pod-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Privilege Escalation in Kubernetes Pods

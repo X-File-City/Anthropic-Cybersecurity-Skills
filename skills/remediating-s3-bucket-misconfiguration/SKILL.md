@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [s3-security, bucket-misconfiguration, data-exposure, public-access-block, aws-config]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Remediating S3 Bucket Misconfiguration

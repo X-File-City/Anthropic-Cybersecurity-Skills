@@ -6,7 +6,7 @@ subdomain: zero-trust-architecture
 tags: [zero-trust, cisa, maturity-model, federal-compliance, governance, nist-800-207, identity, devices, networks, applications, data-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing CISA Zero Trust Maturity Model

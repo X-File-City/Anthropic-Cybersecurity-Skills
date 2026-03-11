@@ -10,7 +10,7 @@ subdomain: security-operations
 tags: [implementing, mtls, for, zero]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing mTLS for Zero Trust Services

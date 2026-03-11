@@ -12,7 +12,7 @@ subdomain: penetration-testing
 tags: [privilege-escalation, post-exploitation, Linux-privesc, Windows-privesc, local-exploitation]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Privilege Escalation Assessment
 

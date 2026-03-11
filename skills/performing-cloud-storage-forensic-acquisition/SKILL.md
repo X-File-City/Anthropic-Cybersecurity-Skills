@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [cloud-forensics, google-drive, onedrive, dropbox, box, cloud-acquisition, api-forensics, sync-client, endpoint-artifacts, magnet-axiom]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Cloud Storage Forensic Acquisition

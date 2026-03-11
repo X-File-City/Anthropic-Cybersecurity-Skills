@@ -6,7 +6,7 @@ subdomain: deception-technology
 tags: [deception, honeypot, opencanary, cowrie, t-pot, detection, lateral-movement, network-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Network Deception with Honeypots

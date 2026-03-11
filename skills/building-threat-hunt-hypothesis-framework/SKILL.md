@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, methodology, hypothesis, threat-intelligence, hunting-framework, proactive-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Threat Hunt Hypothesis Framework

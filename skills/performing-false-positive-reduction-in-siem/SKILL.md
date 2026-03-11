@@ -6,7 +6,7 @@ subdomain: soc-operations
 tags: [siem, false-positive, alert-tuning, detection-engineering, alert-fatigue, soc, correlation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing False Positive Reduction in SIEM

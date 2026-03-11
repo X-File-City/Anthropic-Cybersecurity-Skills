@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [osint, threat-actor, profiling, maltego, spiderfoot, attribution, threat-intelligence, reconnaissance]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Threat Actor Profile from OSINT
 

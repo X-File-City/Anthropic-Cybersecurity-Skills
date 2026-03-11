@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, reconnaissance, bloodhound, active-directory, attack-paths, privilege-escalation, graph-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Conducting Internal Reconnaissance with BloodHound CE
 

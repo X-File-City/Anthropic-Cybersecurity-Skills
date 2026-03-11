@@ -10,7 +10,7 @@ subdomain: cloud-security
 tags: [amazon-guardduty, threat-detection, aws-security, runtime-monitoring, cloud-soc]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting Cloud Threats with GuardDuty

@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, gcp, vpc, firewall-rules, network-security, segmentation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing GCP VPC Firewall Rules

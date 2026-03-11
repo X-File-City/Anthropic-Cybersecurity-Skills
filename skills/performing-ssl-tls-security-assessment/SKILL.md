@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [network-security, ssl, tls, sslyze, certificate, cipher-suites, vulnerability-assessment]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing SSL/TLS Security Assessment
 

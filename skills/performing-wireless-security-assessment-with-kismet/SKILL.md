@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [kismet, wireless-security, wifi-assessment, rogue-ap, 802.11, wardriving, wids, wireless-ids, rf-monitoring]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Wireless Security Assessment with Kismet

@@ -6,7 +6,7 @@ subdomain: red-teaming
 tags: [red-team, adversary-simulation, mitre-attack, exploitation, post-exploitation, engagement-planning, rules-of-engagement]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Executing Red Team Engagement Planning
 

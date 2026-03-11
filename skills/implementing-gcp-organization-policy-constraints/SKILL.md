@@ -6,7 +6,7 @@ subdomain: cloud-security
 tags: [gcp, organization-policy, constraints, governance, compliance, cloud-security, resource-manager]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing GCP Organization Policy Constraints

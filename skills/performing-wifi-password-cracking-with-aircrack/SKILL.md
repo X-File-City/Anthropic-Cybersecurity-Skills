@@ -9,7 +9,7 @@ subdomain: network-security
 tags: [network-security, wifi, aircrack-ng, wpa2, wireless-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing WiFi Password Cracking with Aircrack-ng
 

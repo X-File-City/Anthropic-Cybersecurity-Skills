@@ -11,7 +11,7 @@ subdomain: soc-operations
 tags: [soc, splunk, alert-triage, siem, notable-events, correlation-search, incident-review]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Triaging Security Alerts in Splunk
 

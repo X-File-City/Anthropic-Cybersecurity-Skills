@@ -11,7 +11,7 @@ subdomain: identity-access-management
 tags: [HashiCorp-Vault, dynamic-secrets, secrets-management, database-credentials, AWS-secrets, PKI]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing HashiCorp Vault Dynamic Secrets

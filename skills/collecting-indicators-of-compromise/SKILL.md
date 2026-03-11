@@ -12,7 +12,7 @@ subdomain: incident-response
 tags: [IOC-collection, threat-indicators, STIX-TAXII, MISP, threat-intelligence-sharing]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Collecting Indicators of Compromise

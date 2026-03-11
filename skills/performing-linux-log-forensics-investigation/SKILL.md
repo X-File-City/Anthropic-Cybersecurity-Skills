@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [linux-forensics, syslog, auth-log, systemd-journal, journalctl, linux-logs, ssh-forensics, cron, audit-log, log-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Linux Log Forensics Investigation

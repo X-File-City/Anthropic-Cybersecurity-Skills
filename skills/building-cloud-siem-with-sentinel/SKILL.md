@@ -11,7 +11,7 @@ subdomain: cloud-security
 tags: [microsoft-sentinel, cloud-siem, kql-queries, soar-automation, threat-detection]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Building Cloud SIEM with Sentinel

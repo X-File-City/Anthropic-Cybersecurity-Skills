@@ -6,7 +6,7 @@ subdomain: threat-hunting
 tags: [threat-hunting, scheduled-tasks, persistence, mitre-t1053-005, windows, endpoint-detection]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Hunting for Suspicious Scheduled Tasks

@@ -6,7 +6,7 @@ subdomain: threat-intelligence
 tags: [brand-monitoring, impersonation, phishing, domain-monitoring, social-media, brand-protection, threat-intelligence]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Brand Monitoring for Impersonation
 

@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [phishing-reporting, email-security, incident-response, security-awareness, outlook, microsoft-365, soar]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Phishing Reporting Button Workflow
 

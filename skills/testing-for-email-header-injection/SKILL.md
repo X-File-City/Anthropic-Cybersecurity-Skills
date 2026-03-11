@@ -6,7 +6,7 @@ subdomain: web-application-security
 tags: [email-injection, smtp-injection, crlf-injection, header-injection, spam-relay, contact-form, email-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Testing for Email Header Injection

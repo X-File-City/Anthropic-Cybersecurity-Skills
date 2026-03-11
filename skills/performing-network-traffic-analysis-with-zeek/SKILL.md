@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [zeek, network-monitoring, traffic-analysis, ids, nids, pcap, threat-detection, forensics, siem-integration]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Network Traffic Analysis with Zeek

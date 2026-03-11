@@ -12,7 +12,7 @@ subdomain: penetration-testing
 tags: [web-application-pentest, OWASP, Burp-Suite, WSTG, application-security]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Web Application Penetration Test
 

@@ -6,7 +6,7 @@ subdomain: penetration-testing
 tags: [active-directory, BloodHound, Kerberoasting, Impacket, DCSync, ADCS, domain-compromise, privilege-escalation]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Active Directory Penetration Test

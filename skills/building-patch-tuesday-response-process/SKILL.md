@@ -6,7 +6,7 @@ subdomain: vulnerability-management
 tags: [patch-management, patch-tuesday, microsoft, wsus, sccm, vulnerability-remediation, windows-update]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Patch Tuesday Response Process
 

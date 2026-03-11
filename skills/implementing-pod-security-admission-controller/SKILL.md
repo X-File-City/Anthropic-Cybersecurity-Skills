@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [kubernetes, pod-security-admission, psa, pod-security-standards, admission-controller]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Pod Security Admission Controller

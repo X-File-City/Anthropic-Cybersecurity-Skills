@@ -6,7 +6,7 @@ subdomain: devsecops
 tags: [github-advanced-security, codeql, sast, code-scanning, supply-chain-security, devops-security, shift-left]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing GitHub Advanced Security for Code Scanning

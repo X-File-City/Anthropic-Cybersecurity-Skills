@@ -9,7 +9,7 @@ subdomain: cloud-security
 tags: [cloud-security, aws, credential-exposure, trufflehog, secrets-detection, devsecops]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Detecting AWS Credential Exposure with TruffleHog

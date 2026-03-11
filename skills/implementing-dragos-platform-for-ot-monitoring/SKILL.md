@@ -10,7 +10,7 @@ subdomain: ot-ics-security
 tags: [ot-security, ics, dragos, threat-detection, ot-monitoring, scada, threat-intelligence, ndr]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Dragos Platform for OT Monitoring

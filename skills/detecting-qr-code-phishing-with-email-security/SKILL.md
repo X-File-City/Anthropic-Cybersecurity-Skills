@@ -6,7 +6,7 @@ subdomain: phishing-defense
 tags: [quishing, qr-code, phishing, email-security, image-analysis, ocr, mobile-security]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Detecting QR Code Phishing with Email Security
 

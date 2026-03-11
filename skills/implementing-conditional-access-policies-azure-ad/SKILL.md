@@ -6,7 +6,7 @@ subdomain: identity-access-management
 tags: [iam, identity, access-control, azure-ad, entra-id, conditional-access, zero-trust]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Conditional Access Policies in Azure AD
 

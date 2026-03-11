@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, ticketing, servicenow, jira, thehive, incident-management, sla, workflow]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Ticketing System for Incidents
 

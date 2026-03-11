@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, sigma, detection-rules, siem, mitre-attack, splunk, elastic, sentinel]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Detection Rules with Sigma
 

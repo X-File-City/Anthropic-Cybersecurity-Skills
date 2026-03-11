@@ -6,7 +6,7 @@ subdomain: compliance-governance
 tags: [compliance, governance, iso27001, isms, risk-management, certification]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing ISO 27001 Information Security Management
 

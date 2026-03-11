@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [containers, docker, security, trivy, vulnerability-scanning]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Scanning Docker Images with Trivy
 

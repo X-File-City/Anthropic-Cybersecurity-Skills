@@ -10,7 +10,7 @@ subdomain: soc-operations
 tags: [soc, dashboard, incident-response, splunk, visualization, situational-awareness, metrics]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Building Incident Response Dashboard
 

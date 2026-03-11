@@ -6,7 +6,7 @@ subdomain: cryptography
 tags: [cryptography, audit, security-review, compliance, vulnerability-assessment]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Performing Cryptographic Audit of Application
 

@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, steganography, steganalysis, hidden-data, covert-channels, image-analysis]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing Steganography Detection

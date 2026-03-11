@@ -6,7 +6,7 @@ subdomain: digital-forensics
 tags: [forensics, file-carving, foremost, data-recovery, evidence-recovery, unallocated-space]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Performing File Carving with Foremost

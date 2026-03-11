@@ -6,7 +6,7 @@ subdomain: network-security
 tags: [bgp, rpki, route-origin-validation, rov, roa, route-hijacking, internet-routing, bgp-security, prefix-hijack]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing BGP Security with RPKI

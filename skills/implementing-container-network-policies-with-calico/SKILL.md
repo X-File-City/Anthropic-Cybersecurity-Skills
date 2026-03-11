@@ -6,7 +6,7 @@ subdomain: container-security
 tags: [container-security, kubernetes, calico, network-policy, microsegmentation, cni]
 version: "1.0"
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 # Implementing Container Network Policies with Calico
 

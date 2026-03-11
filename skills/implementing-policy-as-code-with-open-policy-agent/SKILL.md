@@ -10,7 +10,7 @@ subdomain: devsecops
 tags: [devsecops, cicd, opa, gatekeeper, policy-as-code, kubernetes, secure-sdlc]
 version: 1.0.0
 author: mahipal
-license: MIT
+license: Apache-2.0
 ---
 
 # Implementing Policy as Code with Open Policy Agent

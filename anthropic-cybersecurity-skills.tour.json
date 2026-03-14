@@ -1,0 +1,181 @@
+{
+  "id": "anthropic-cybersecurity-skills-tour",
+  "title": "Anthropic Cybersecurity Skills",
+  "description": "A guided tour of the largest open-source collection of 734 AI-ready cybersecurity skills, covering threat hunting, forensics, cloud security, and more — mapped to MITRE ATT&CK, NIST CSF, and OWASP frameworks.",
+  "version": "1.0.0",
+  "steps": [
+    {
+      "id": "overview",
+      "title": "Welcome to the Cybersecurity Skills Library",
+      "description": "This repository contains 734 structured cybersecurity skills compatible with Claude Code, GitHub Copilot, Cursor, and 20+ AI platforms. Skills span 36 subdomains including threat hunting, malware analysis, cloud security, and incident response. Let's explore how it's organized.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes"
+    },
+    {
+      "id": "skills-directory",
+      "title": "The Skills Collection",
+      "description": "The skills/ directory is the heart of the project — 734 individual skill directories, each following the agentskills.io standard. Every skill contains a SKILL.md with YAML frontmatter for efficient AI discovery and a detailed Markdown body with practical, step-by-step workflows using real tools and commands.",
+      "focusDirectory": "skills",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "skills-root",
+          "name": "Skills Directory",
+          "color": "#3b82f6",
+          "items": [
+            { "path": "skills", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "skill-anatomy",
+      "title": "Anatomy of a Skill",
+      "description": "Each skill can include: SKILL.md (required — overview, prerequisites, practical steps, validation criteria), references/ (standards and deep documentation), scripts/ (agent.py for AI automation, process.py for practitioners), and assets/ (report templates and checklists). The YAML frontmatter enables token-efficient discovery — AI agents read ~30-50 tokens to decide relevance before loading the full body.",
+      "focusDirectory": "skills",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "example-skill",
+          "name": "Example Full-Featured Skill",
+          "color": "#10b981",
+          "items": [
+            { "path": "skills/implementing-just-in-time-access-provisioning", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "framework-mappings",
+      "title": "Framework Mappings",
+      "description": "The mappings/ directory aligns all 734 skills to major cybersecurity frameworks. This includes a MITRE ATT&CK Navigator layer covering 218 techniques across all 14 tactics, NIST CSF 2.0 alignment across all 6 core functions (Govern, Identify, Protect, Detect, Respond, Recover), and OWASP Top 10 coverage. These mappings enable gap analysis and compliance alignment.",
+      "focusDirectory": "mappings",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "mitre-mapping",
+          "name": "MITRE ATT&CK",
+          "color": "#ef4444",
+          "items": [
+            { "path": "mappings/mitre-attack", "type": "directory" },
+            { "path": "mappings/attack-navigator-layer.json", "type": "file" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "nist-mapping",
+          "name": "NIST CSF 2.0",
+          "color": "#8b5cf6",
+          "items": [
+            { "path": "mappings/nist-csf", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "owasp-mapping",
+          "name": "OWASP",
+          "color": "#f59e0b",
+          "items": [
+            { "path": "mappings/owasp", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "plugin-config",
+      "title": "AI Platform Integration",
+      "description": "The .claude-plugin/ directory contains plugin.json and marketplace.json for native Claude Code integration via the /plugin command. The index.json at the root is an auto-generated searchable index of all 734 skills (~440KB), enabling AI agents to efficiently discover and load relevant skills for any cybersecurity task.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "plugin-files",
+          "name": "Plugin Configuration",
+          "color": "#06b6d4",
+          "items": [
+            { "path": ".claude-plugin", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "skill-index",
+          "name": "Skills Index",
+          "color": "#f97316",
+          "items": [
+            { "path": "index.json", "type": "file" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "ci-cd-automation",
+      "title": "CI/CD & Quality Automation",
+      "description": "GitHub Actions workflows in .github/workflows/ automatically validate skill structure (YAML frontmatter, directory conventions) and regenerate index.json on every push. Issue templates in .github/ISSUE_TEMPLATE/ standardize contributions for bug reports, new skill requests, and improvements — ensuring consistent quality across all 734 skills.",
+      "focusDirectory": ".github",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "workflows",
+          "name": "CI Workflows",
+          "color": "#22c55e",
+          "items": [
+            { "path": ".github/workflows", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "issue-templates",
+          "name": "Issue Templates",
+          "color": "#a855f7",
+          "items": [
+            { "path": ".github/ISSUE_TEMPLATE", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "community-governance",
+      "title": "Community & Governance",
+      "description": "The project maintains high standards through CONTRIBUTING.md (skill naming conventions, quality checklist, subdomain list), SECURITY.md (vulnerability reporting with 48-hour response SLA), CODE_OF_CONDUCT.md (Contributor Covenant), and Apache 2.0 licensing. This open governance model has enabled a community-driven library of 734 production-ready cybersecurity skills.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "governance-files",
+          "name": "Governance & Community",
+          "color": "#ec4899",
+          "items": [
+            { "path": "CONTRIBUTING.md", "type": "file" },
+            { "path": "SECURITY.md", "type": "file" },
+            { "path": "CODE_OF_CONDUCT.md", "type": "file" },
+            { "path": "LICENSE", "type": "file" },
+            { "path": "README.md", "type": "file" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "full-picture",
+      "title": "The Full Picture",
+      "description": "You've now seen the full architecture: 734 cybersecurity skills organized by subdomain, mapped to MITRE ATT&CK (218 techniques), NIST CSF 2.0, and OWASP frameworks, with native AI platform integration and automated quality enforcement. Whether you're an AI agent executing security workflows or a practitioner building detection capabilities, this library provides actionable, validated skills across the entire cybersecurity landscape.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes"
+    }
+  ]
+}

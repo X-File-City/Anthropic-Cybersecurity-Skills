@@ -33,7 +33,7 @@
     {
       "id": "skill-anatomy",
       "title": "Anatomy of a Skill",
-      "description": "Each skill can include: SKILL.md (required — overview, prerequisites, practical steps, validation criteria), references/ (standards and deep documentation), scripts/ (agent.py for AI automation, process.py for practitioners), and assets/ (report templates and checklists). The YAML frontmatter enables token-efficient discovery — AI agents read ~30-50 tokens to decide relevance before loading the full body.",
+      "description": "Each skill can include: SKILL.md (required — overview, prerequisites, practical steps, validation criteria), references/ (standards and deep documentation), scripts/ (agent.py for AI automation, process.py for practitioners), and assets/ (report templates and checklists). The YAML frontmatter enables token-efficient discovery — AI agents read approximately 30-50 tokens to decide relevance before loading the full body.",
       "focusDirectory": "skills",
       "colorMode": "fileTypes",
       "highlightLayers": [
@@ -92,7 +92,7 @@
     {
       "id": "plugin-config",
       "title": "AI Platform Integration",
-      "description": "The .claude-plugin/ directory contains plugin.json and marketplace.json for native Claude Code integration via the /plugin command. The index.json at the root is an auto-generated searchable index of all 734 skills (~440KB), enabling AI agents to efficiently discover and load relevant skills for any cybersecurity task.",
+      "description": "The .claude-plugin/ directory contains plugin.json and marketplace.json for native Claude Code integration via the /plugin command. The index.json at the root is an auto-generated searchable index of all 734 skills, enabling AI agents to efficiently discover and load relevant skills for any cybersecurity task.",
       "focusDirectory": "",
       "colorMode": "fileTypes",
       "highlightLayers": [
@@ -121,7 +121,7 @@
     {
       "id": "ci-cd-automation",
       "title": "CI/CD & Quality Automation",
-      "description": "GitHub Actions workflows in .github/workflows/ automatically validate skill structure (YAML frontmatter, directory conventions) and regenerate index.json on every push. Issue templates in .github/ISSUE_TEMPLATE/ standardize contributions for bug reports, new skill requests, and improvements — ensuring consistent quality across all 734 skills.",
+      "description": "GitHub Actions workflows in github/workflows/ automatically validate skill structure (YAML frontmatter, directory conventions) and regenerate index.json on every push. Issue templates in github/ISSUE_TEMPLATE/ standardize contributions for bug reports, new skill requests, and improvements — ensuring consistent quality across all 734 skills.",
       "focusDirectory": ".github",
       "colorMode": "fileTypes",
       "highlightLayers": [
